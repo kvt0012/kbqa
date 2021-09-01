@@ -6,7 +6,7 @@ Knowledge base Question Answering
 ## Preprocess data
 Extract fame from video and detect face in frame to save *.jpg image.
 
-`python extrac_face.py --inp in/ --output out/ --worker 1 --duration 4`
+`python main.py --inp in/ --output out/ `
 
 `--data` : Data input configuration
 
