@@ -16,10 +16,20 @@ Extract fame from video and detect face in frame to save *.jpg image.
 
 `python main.py --data --output`
 
-
+*Paper*: []()
+#### Citation 
+```
+@Article{Tran,
+  Title                    = {},
+  Author                   = {},
+  Journal                  = {},
+  Year                     = {},
+  volume                   = {},
+  number                    = {}
+}
+```
 
 ## References
-[1] https://github.com/nii-yamagishilab/Capsule-Forensics-v2
-
+[1] 
 
 
