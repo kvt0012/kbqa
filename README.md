@@ -8,10 +8,9 @@
 - In this work, we are also releasing a dataset for COVID-19. The dataset is provided in folder [COVID_data](https://github.com/tamlhp/kbqa/tree/master/covid_data) in this repository. More details about dataset are provided below.
 
 - Links related to this work:
-  - Paper: 
   - Dataset and codes: https://github.com/tamlhp/kbqa/
 
-*Paper*: []()
+<!-- *Paper*: []()
 #### Citation 
 ```
 @Article{Tran,
@@ -22,7 +21,7 @@
   volume                   = {},
   number                    = {}
 }
-```
+``` -->
 # Framework
 
 ## Dataset
@@ -73,6 +72,4 @@
 
 
 
-## References
-[1] 
 
