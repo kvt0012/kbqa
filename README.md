@@ -4,7 +4,7 @@
 - This repository is a implementation of the Framework for comparative study in our paper:
 [A comparative study of question answering over knowledge bases](). 
 
-- In this work, we are also releasing a dataset for COVID-19. The dataset is provided in folder [mimicsql_data](https://github.com/tamlhp/kbqa/tree/master/covid_data) in this repository. More details about dataset are provided below.
+- In this work, we are also releasing a dataset for COVID-19. The dataset is provided in folder [COVID_data](https://github.com/tamlhp/kbqa/tree/master/covid_data) in this repository. More details about dataset are provided below.
 
 - Links related to this work:
   - Paper: 
@@ -69,9 +69,6 @@ Extract fame from video and detect face in frame to save *.jpg image.
 - ```Validate:``` python main.py --task validate
 
 - ```Test:``` python main.py --task test
-
-
-
 
 
 
