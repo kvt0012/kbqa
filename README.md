@@ -1,5 +1,5 @@
 # kbqa
-Knowledge base Question Answering
+A comparative study of question answering over knowledge bases
 # Framework
 ## Enviroment
 ` pip install -r requirement.txt` 
