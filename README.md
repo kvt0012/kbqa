@@ -53,7 +53,7 @@
 ## Enviroment
 ` pip install -r requirement.txt` 
 ## Preprocess data
-Extract fame from video and detect face in frame to save *.jpg image.
+
 
 `python main.py --inp in/ --output out/ `
 
