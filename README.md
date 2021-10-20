@@ -2,13 +2,9 @@
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 	![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
-- This repository is a implementation of the Framework for comparative study in our paper:
-[A comparative study of question answering over knowledge bases](). 
+- This repository is a implementation of the framework for a comparative study of question answering over knowledge bases.
 
 - In this work, we are also releasing a dataset for COVID-19. The dataset is provided in folder [COVID_data](https://github.com/tamlhp/kbqa/tree/main/data/COVID) in this repository. More details about dataset are provided below.
-
-- Links related to this work:
-  - Dataset and codes: https://github.com/tamlhp/kbqa/
 
 <!-- *Paper*: []()
 #### Citation 
@@ -24,7 +20,7 @@
 ``` -->
 # Framework
 
-## Dataset
+## Dataset format
 
 ```json
 {
