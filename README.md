@@ -5,7 +5,7 @@
 - This repository is a implementation of the Framework for comparative study in our paper:
 [A comparative study of question answering over knowledge bases](). 
 
-- In this work, we are also releasing a dataset for COVID-19. The dataset is provided in folder [COVID_data](https://github.com/tamlhp/kbqa/tree/master/covid_data) in this repository. More details about dataset are provided below.
+- In this work, we are also releasing a dataset for COVID-19. The dataset is provided in folder [COVID_data](https://github.com/tamlhp/kbqa/tree/main/data/COVID) in this repository. More details about dataset are provided below.
 
 - Links related to this work:
   - Dataset and codes: https://github.com/tamlhp/kbqa/
