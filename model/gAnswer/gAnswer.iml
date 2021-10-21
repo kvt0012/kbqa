@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib/malt-parser-en-1.7.2" />
+          <root url="file://$MODULE_DIR$/lib/maltparser-1.9.1" />
+          <root url="file://$MODULE_DIR$/lib/network" />
+          <root url="file://$MODULE_DIR$/lib/stanford-corenlp-full-2012-11-12" />
+          <root url="file://$MODULE_DIR$/lib/stanford-ner-2012-11-11" />
+          <root url="file://$MODULE_DIR$/lib/WordNet2.1" />
+          <root url="jar://$MODULE_DIR$/lib/GstoreJavaAPI.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/jetty-all-9.0.4.v20130625.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/json.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/mysql-connector-java-5.1.7-bin.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/servlet-api-3.0.jar!/" />
+          <root url="file://$MODULE_DIR$/lib/lucene-2.0.0" />
+          <root url="file://$MODULE_DIR$/lib/stanford-parser-2012-07-09" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://$MODULE_DIR$/lib/lucene-2.0.0/docs/api" />
+          <root url="file://$MODULE_DIR$/lib/stanford-parser-2012-07-09/stanford-parser-2012-07-09-javadoc/javadoc" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/lib/stanford-corenlp-full-2012-11-12" />
+          <root url="file://$MODULE_DIR$/lib/stanford-corenlp-full-2012-11-12" />
+          <root url="file://$MODULE_DIR$/lib/stanford-ner-2012-11-11" />
+          <root url="file://$MODULE_DIR$/lib/stanford-ner-2012-11-11" />
+          <root url="jar://$MODULE_DIR$/lib/GstoreJavaAPI.jar!/" />
+          <root url="file://$MODULE_DIR$/lib/lucene-2.0.0/src/demo" />
+          <root url="file://$MODULE_DIR$/lib/stanford-parser-2012-07-09" />
+          <root url="file://$MODULE_DIR$/lib/stanford-parser-2012-07-09" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/lib/lucene-2.0.0" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/lib/malt-parser-en-1.7.2" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/lib/maltparser-1.9.1" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/lib/network" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/lib/stanford-corenlp-full-2012-11-12" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/lib/stanford-ner-2012-11-11" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/lib/stanford-parser-2012-07-09" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/lib/WordNet2.1" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/lib/stanford-corenlp-full-2012-11-12" recursive="false" type="SOURCES" />
+        <jarDirectory url="file://$MODULE_DIR$/lib/stanford-ner-2012-11-11" recursive="false" type="SOURCES" />
+        <jarDirectory url="file://$MODULE_DIR$/lib/stanford-parser-2012-07-09" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+  </component>
+</module>
