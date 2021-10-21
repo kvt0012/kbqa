@@ -1,0 +1,4035 @@
+[
+    {
+        "answer": "correct",
+        "elaps": 12.933160781860352,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Salt_Lake_City> <http://dbpedia.org/ontology/timeZone> ?u_0 .?u_1 <http://dbpedia.org/ontology/timeZone> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Salt_Lake_City> <http://dbpedia.org/ontology/timeZone> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "99",
+        "precision": 1.0,
+        "query": " SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Salt_Lake_City> <http://dbpedia.org/ontology/timeZone> ?uri }",
+        "question": "What is the time zone of Salt Lake City?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.98
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.2700769901275635,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "98",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { ?uri <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Assassins_of_Julius_Caesar> }",
+        "question": "Who killed Caesar?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9666666666666667
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 1.1069166660308838,
+        "features": [
+            "singlevar",
+            "sort",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "86",
+        "precision": null,
+        "query": " SELECT ?uri WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Mountain> ; <http://dbpedia.org/ontology/elevation> ?elevation ; <http://dbpedia.org/ontology/locatedInArea> <http://dbpedia.org/resource/Germany> } ORDER BY DESC(?elevation) LIMIT 1",
+        "question": "What is the highest mountain in Germany?",
+        "question_type": [
+            0
+        ],
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.96
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.42772984504699707,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "84",
+        "precision": null,
+        "query": " SELECT ?uri WHERE { ?uri <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Presidents_of_the_United_States> . <http://dbpedia.org/resource/Vietnam_War> <http://dbpedia.org/ontology/commander> ?uri }",
+        "question": "Which American presidents were in office during the Vietnam War?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8933333333333333
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.29079198837280273,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "81",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/class/yago/WikicatStatesOfTheUnitedStates> ; <http://dbpedia.org/property/governor> <http://dbpedia.org/resource/Butch_Otter> }",
+        "question": "Butch Otter is the governor of which U.S. state?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-incorrect",
+        "elaps": 1.6101572513580322,
+        "features": [
+            "singlevar",
+            "compound",
+            "count"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/goldMedalist> <http://dbpedia.org/resource/Michael_Phelps>",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "73",
+        "precision": 0.0,
+        "query": " SELECT Count(?sub) as ?c WHERE { ?sub <http://dbpedia.org/ontology/goldMedalist> <http://dbpedia.org/resource/Michael_Phelps> . filter (contains (str(?sub), \"2008\") && contains (str(?sub), \"Olympics\")) }",
+        "question": "How many gold medals did Michael Phelps win at the 2008 Olympics?",
+        "question_type": [
+            2
+        ],
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.94
+    },
+    {
+        "answer": "correct",
+        "elaps": 41.733903646469116,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/birthDate> ?u_1 .?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Artist>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Artist>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Artist>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Rachel_Stevens> <http://dbpedia.org/ontology/birthDate> ?u_0 .?u_1 <http://dbpedia.org/ontology/birthDate> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Rachel_Stevens> <http://dbpedia.org/ontology/birthDate> ?u_0 .?u_1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Artist>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/birthDate> ?u_0 .?u_1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Artist>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Rachel_Stevens> <http://dbpedia.org/ontology/birthDate> ?u_0 .?u_1 <http://dbpedia.org/ontology/birthDate> ?u_0 .?u_1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Artist>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Rachel_Stevens> <http://dbpedia.org/ontology/birthDate> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "66",
+        "precision": 0.00016662778684973506,
+        "query": " SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Artist> . <http://dbpedia.org/resource/Rachel_Stevens> <http://dbpedia.org/ontology/birthDate> ?birthdate . ?uri <http://dbpedia.org/ontology/birthDate> ?birthdate }",
+        "question": "Which artists were born on the same date as Rachel Stevens?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.96
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.24955463409423828,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "64",
+        "precision": null,
+        "query": " SELECT DISTINCT ?string WHERE { <http://dbpedia.org/resource/Frank_Herbert> <http://dbpedia.org/property/occupation> ?string }",
+        "question": "What is the profession of Frank Herbert?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.2639429569244385,
+        "features": [
+            "singlevar",
+            "boolean",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "6",
+        "precision": null,
+        "query": "ASK WHERE { <http://dbpedia.org/resource/Taiko> a <http://dbpedia.org/class/yago/WikicatJapaneseMusicalInstruments> }",
+        "question": "Are Taiko some kind of Japanese musical instrument?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.7666666666666667
+    },
+    {
+        "answer": "-incorrect",
+        "elaps": 12.377211332321167,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/FC_Porto> <http://dbpedia.org/ontology/ground> ?u_0 .?u_1 <http://dbpedia.org/ontology/ground> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/ground> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/FC_Porto> <http://dbpedia.org/ontology/ground> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/ground> ?u_1",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "56",
+        "precision": 0.0,
+        "query": " SELECT ?capacity WHERE { { <http://dbpedia.org/resource/FC_Porto> <http://dbpedia.org/ontology/ground> ?ground . ?ground <http://dbpedia.org/ontology/capacity> ?capacity } UNION { <http://dbpedia.org/resource/FC_Porto> <http://dbpedia.org/ontology/ground> ?ground . ?ground <http://dbpedia.org/property/capacity> ?capacity } }",
+        "question": "How many seats does the home stadium of FC Porto have?",
+        "question_type": [
+            2
+        ],
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9466666666666667
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.3762679100036621,
+        "features": [
+            "singlevar",
+            "sort",
+            "compound",
+            "count"
+        ],
+        "generated_queries": [],
+        "id": "49",
+        "precision": null,
+        "query": "SELECT ?uri WHERE { ?airline <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airline> . ?airline <http://dbpedia.org/property/frequentFlyer> ?uri. } GROUP BY ?uri ORDER BY DESC(COUNT(DISTINCT ?airline)) OFFSET 0 LIMIT 1",
+        "question": "Which frequent flyer program has the most airlines?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.86
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.32694387435913086,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "44",
+        "precision": null,
+        "query": " SELECT ?uri WHERE { ?uri <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Countries_in_Europe> ; <http://dbpedia.org/ontology/governmentType> <http://dbpedia.org/resource/Constitutional_monarchy> }",
+        "question": "Which European countries have a constitutional monarchy?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9933333333333333
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.2748284339904785,
+        "features": [
+            "singlevar",
+            "comparison",
+            "compound",
+            "count"
+        ],
+        "generated_queries": [],
+        "id": "42",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { ?cave <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Cave> ; <http://dbpedia.org/ontology/location> ?uri . ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Country> } GROUP BY ?uri HAVING ( COUNT(?cave) > 2 )",
+        "question": "Which countries have places with more than two caves?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.94
+    },
+    {
+        "answer": "-incorrect",
+        "elaps": 310.3473644256592,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/California> .?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airport> .?u_0 <http://dbpedia.org/ontology/city> <http://dbpedia.org/resource/California>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airport> .?u_1 <http://dbpedia.org/ontology/city> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airport> .?u_0 <http://dbpedia.org/ontology/city> <http://dbpedia.org/resource/California>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/California> .?u_0 <http://dbpedia.org/ontology/city> <http://dbpedia.org/resource/California>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/California> .?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airport>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/city> <http://dbpedia.org/resource/California>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airport>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/California>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/California> .?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airport> .?u_0 <http://dbpedia.org/ontology/city> <http://dbpedia.org/resource/California> .?u_0 <http://dbpedia.org/ontology/city> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airport> .?u_0 <http://dbpedia.org/ontology/city> <http://dbpedia.org/resource/California> .?u_0 <http://dbpedia.org/ontology/city> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/California> .?u_0 <http://dbpedia.org/ontology/city> <http://dbpedia.org/resource/California> .?u_0 <http://dbpedia.org/ontology/city> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/California> .?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airport> .?u_0 <http://dbpedia.org/ontology/city> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/city> <http://dbpedia.org/resource/California> .?u_0 <http://dbpedia.org/ontology/city> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Airport> .?u_0 <http://dbpedia.org/ontology/city> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/California> .?u_0 <http://dbpedia.org/ontology/city> ?u_1",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "4",
+        "precision": 0.011157721748908014,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Airport> { ?uri <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/California> } UNION { ?uri <http://dbpedia.org/ontology/city> <http://dbpedia.org/resource/California> } UNION { ?uri <http://dbpedia.org/ontology/city> ?city . ?city <http://dbpedia.org/ontology/isPartOf> <http://dbpedia.org/resource/California> } UNION { ?uri <http://dbpedia.org/ontology/operator> <http://dbpedia.org/resource/California> } }",
+        "question": "Which airports are located in California, USA?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9333333333333333
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.2565162181854248,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "37",
+        "precision": null,
+        "query": " SELECT DISTINCT ?string WHERE { <http://dbpedia.org/resource/San_Francisco> foaf:nick ?string }",
+        "question": "What are the nicknames of San Francisco?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "correct",
+        "elaps": 10.847044944763184,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Angela_Merkel> <http://dbpedia.org/property/birthName> ?u_0 .?u_1 <http://dbpedia.org/property/birthName> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Angela_Merkel> <http://dbpedia.org/property/birthName> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "32",
+        "precision": 1.0,
+        "query": " SELECT DISTINCT ?string WHERE { <http://dbpedia.org/resource/Angela_Merkel> <http://dbpedia.org/property/birthName> ?string }",
+        "question": "What is Angela Merkel\u2019s birth name?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9933333333333333
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.3798825740814209,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "31",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Berlin> dbp:leader ?uri }",
+        "question": "Who is the mayor of Berlin?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.3593578338623047,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "29",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Country> { ?uri <http://dbpedia.org/ontology/currency> <http://dbpedia.org/resource/Euro> } UNION { ?uri <http://dbpedia.org/property/currencyCode> \"EUR\"@en } }",
+        "question": "Which countries in the European Union adopted the Euro?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.88
+    },
+    {
+        "answer": "correct",
+        "elaps": 24.39345359802246,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": true,
+                "query": "?u_0 <http://dbpedia.org/ontology/publisher> <http://dbpedia.org/resource/Mean_Hamster_Software> .?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Software> .?u_0 <http://dbpedia.org/property/publisher> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Software> .?u_0 <http://dbpedia.org/property/publisher> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Software>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/publisher> <http://dbpedia.org/resource/Mean_Hamster_Software> .?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Software>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Software> .?u_1 <http://dbpedia.org/property/publisher> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/publisher> <http://dbpedia.org/resource/Mean_Hamster_Software>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/publisher> <http://dbpedia.org/resource/Mean_Hamster_Software> .?u_0 <http://dbpedia.org/property/publisher> ?u_1",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "23",
+        "precision": 0.0001996007984031936,
+        "query": " SELECT DISTINCT ?uri WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Software> { ?uri <http://dbpedia.org/property/publisher> \"Mean Hamster Software\"@en } UNION { ?uri <http://dbpedia.org/ontology/publisher> <http://dbpedia.org/resource/Mean_Hamster_Software> } }",
+        "question": "Which software has been published by Mean Hamster Software?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9533333333333334
+    },
+    {
+        "answer": "correct",
+        "elaps": 72.11650228500366,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/country> ?u_1 .?u_0 <http://dbpedia.org/ontology/birthPlace> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/country> ?u_0 .?u_0 <http://dbpedia.org/ontology/country> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Bill_Gates> <http://dbpedia.org/ontology/birthPlace> ?u_0 .?u_1 <http://dbpedia.org/ontology/country> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Bill_Gates> <http://dbpedia.org/ontology/birthPlace> ?u_0 .?u_0 <http://dbpedia.org/ontology/country> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Bill_Gates> <http://dbpedia.org/ontology/birthPlace> ?u_0 .?u_1 <http://dbpedia.org/ontology/birthPlace> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/country> ?u_0 .?u_1 <http://dbpedia.org/ontology/birthPlace> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Bill_Gates> <http://dbpedia.org/ontology/birthPlace> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "68",
+        "precision": 0.00019374212922600018,
+        "query": " SELECT DISTINCT ?country WHERE { { <http://dbpedia.org/resource/Bill_Gates> <http://dbpedia.org/ontology/birthPlace> ?birthPlace . ?birthPlace <http://dbpedia.org/ontology/country> ?country } UNION { <http://dbpedia.org/resource/Bill_Gates> <http://dbpedia.org/ontology/birthPlace> ?birthPlace . ?birthPlace <http://dbpedia.org/ontology/isPartOf> ?place . ?place <http://dbpedia.org/ontology/country> ?country } }",
+        "question": "Which country was Bill Gates born in?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9933333333333333
+    },
+    {
+        "answer": "correct",
+        "elaps": 5.411386013031006,
+        "features": [
+            "singlevar",
+            "compound",
+            "count"
+        ],
+        "generated_queries": [
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Jacques_Cousteau> <http://dbpedia.org/ontology/child> ?u_0 .?u_0 <http://dbpedia.org/ontology/child> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Jacques_Cousteau> <http://dbpedia.org/ontology/child> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Jacques_Cousteau> <http://dbpedia.org/ontology/child> ?u_0 .?u_1 <http://dbpedia.org/ontology/child> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/child> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "22",
+        "precision": 0.2,
+        "query": "SELECT COUNT(DISTINCT ?y AS ?y) WHERE { <http://dbpedia.org/resource/Jacques_Cousteau> <http://dbpedia.org/ontology/child> ?x . ?x <http://dbpedia.org/ontology/child> ?y . }",
+        "question": "How many grand-children did Jacques Cousteau have?",
+        "question_type": [
+            2
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9133333333333333
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.27307605743408203,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "214",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/occupation> <http://dbpedia.org/resource/Skateboarder> { ?uri <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Sweden> } UNION { ?uri <http://dbpedia.org/ontology/birthPlace> ?place . ?place <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Sweden> } }",
+        "question": "Give me all professional skateboarders from Sweden.",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.2624032497406006,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "210",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/class/yago/WikicatMonarchsOfTheUnitedKingdom> ; <http://dbpedia.org/ontology/spouse> ?spouse . ?spouse <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Germany> }",
+        "question": "Which monarchs of the United Kingdom were married to a German?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-incorrect",
+        "elaps": 41.11174273490906,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Argentina> .?u_0 <http://dbpedia.org/ontology/country> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Argentina>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Argentina> .?u_1 <http://dbpedia.org/ontology/country> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "199",
+        "precision": 0.06571798188874516,
+        "query": " SELECT DISTINCT ?uri WHERE { { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/class/yago/ArgentineFilms> } UNION { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> { ?uri <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Argentina> } UNION { ?uri <http://dbpedia.org/property/country> \"Argentina\"@en } } }",
+        "question": "Give me all Argentine films.",
+        "question_type": [
+            0
+        ],
+        "recall": 0.2967289719626168,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8266666666666667
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.2855803966522217,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "203",
+        "precision": null,
+        "query": "SELECT DISTINCT ?s WHERE { <http://dbpedia.org/resource/Michael_Jackson> <http://dbpedia.org/property/deathCause> ?s }",
+        "question": "How did Michael Jackson die?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.7866666666666666
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.8557252883911133,
+        "features": [
+            "singlevar",
+            "sort",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "197",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { ?uri <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:States_of_the_United_States> ; <http://dbpedia.org/property/admittancedate> ?x } ORDER BY DESC(?x) LIMIT 1",
+        "question": "Which U.S. state has been admitted latest?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.92
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.3827846050262451,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "196",
+        "precision": null,
+        "query": " SELECT DISTINCT ?String WHERE { <http://dbpedia.org/resource/Millipede> <http://dbpedia.org/property/taxon> ?String }",
+        "question": "Which classes does the Millepede belong to?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8333333333333334
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.2612311840057373,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "188",
+        "precision": null,
+        "query": " SELECT DISTINCT ?string WHERE { <http://dbpedia.org/resource/Forbes> <http://xmlns.com/foaf/0.1/homepage> ?string }",
+        "question": "Give me the homepage of Forbes.",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.78
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.2555732727050781,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "187",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Amanda_Palmer> }",
+        "question": "Who is the husband of Amanda Palmer?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.26843810081481934,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "176",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/The_Storm_on_the_Sea_of_Galilee> dbo:author ?uri }",
+        "question": "Who painted The Storm on the Sea of Galilee?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8466666666666667
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.2850072383880615,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "62",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Karakoram> dbp:highest ?uri }",
+        "question": "What is the highest place of Karakoram?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.46547627449035645,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "173",
+        "precision": null,
+        "query": " SELECT DISTINCT ?date WHERE { <http://dbpedia.org/resource/Finland> <http://dbpedia.org/property/accessioneudate> ?date }",
+        "question": "When did Finland join the EU?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.88
+    },
+    {
+        "answer": "correct",
+        "elaps": 10.254799127578735,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/The_Big_Bang_Theory> <http://dbpedia.org/ontology/starring> ?u_0 .?u_1 <http://dbpedia.org/ontology/starring> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/The_Big_Bang_Theory> <http://dbpedia.org/ontology/starring> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "168",
+        "precision": 1.0,
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/The_Big_Bang_Theory> <http://dbpedia.org/ontology/starring> ?uri }",
+        "question": "Which actors play in Big Bang Theory?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.3244588375091553,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "166",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/field> <http://dbpedia.org/resource/Computer_science> ; <http://dbpedia.org/ontology/award> <http://dbpedia.org/resource/Academy_Award> }",
+        "question": "Which computer scientist won an oscar?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8266666666666667
+    },
+    {
+        "answer": "correct",
+        "elaps": 10.753464460372925,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Harry_Potter> <http://dbpedia.org/property/author> ?u_0 .?u_1 <http://dbpedia.org/property/author> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Harry_Potter> <http://dbpedia.org/property/author> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "160",
+        "precision": 1.0,
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Harry_Potter> <http://dbpedia.org/property/author> ?uri }",
+        "question": "Who wrote Harry Potter?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9133333333333333
+    },
+    {
+        "answer": "correct",
+        "elaps": 12.567283391952515,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": true,
+                "query": "?u_0 <http://dbpedia.org/ontology/award> <http://dbpedia.org/resource/Nobel_Prize_in_Literature> .?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Writer>",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Writer>",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/award> <http://dbpedia.org/resource/Nobel_Prize_in_Literature>",
+                "target_var": "?u_0"
+            }
+        ],
+        "id": "158",
+        "precision": 0.9354838709677419,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Writer> ; <http://dbpedia.org/ontology/award> <http://dbpedia.org/resource/Nobel_Prize_in_Literature> }",
+        "question": "Give me all writers that won the Nobel Prize in literature.",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8933333333333333
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.2722773551940918,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "157",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Lovesick_(1983_film)> <http://dbpedia.org/ontology/starring> ?uri . ?uri <http://dbpedia.org/ontology/birthPlace> ?city . ?city <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/United_Kingdom> }",
+        "question": "Give me English actors starring in Lovesick.",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.7066666666666667
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.2526383399963379,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "155",
+        "precision": null,
+        "query": " SELECT ?nm WHERE { <http://dbpedia.org/resource/Baghdad> <http://xmlns.com/foaf/0.1/nick> ?nm }",
+        "question": "What is the nick name of Baghdad?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9666666666666667
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.9831595420837402,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "150",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { ?x <http://dbpedia.org/property/title> <http://dbpedia.org/resource/President_of_Montenegro> ; <http://dbpedia.org/ontology/birthPlace> ?uri . ?uri <http://dbpedia.org/ontology/type> <http://dbpedia.org/resource/Capital_city> }",
+        "question": "In which city was the president of Montenegro born?",
+        "question_type": [
+            0
+        ],
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.4727051258087158,
+        "features": [
+            "singlevar",
+            "sort",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "149",
+        "precision": null,
+        "query": "SELECT ?uri WHERE { ?uri <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/United_States> . ?uri <http://dbpedia.org/ontology/capital> ?capital . ?uri <http://dbpedia.org/property/densityrank> ?density . OPTIONAL {?uri <http://www.w3.org/2000/01/rdf-schema#label> ?string. FILTER (lang(?string) = 'en') } } ORDER BY ASC(?density) LIMIT 1",
+        "question": "Which U.S. state has the highest population density?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8333333333333334
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.6073763370513916,
+        "features": [
+            "singlevar",
+            "sort",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "25",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/River> ; <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/China> ; <http://dbpedia.org/property/length> ?l } ORDER BY DESC(?l) OFFSET 0 LIMIT 1",
+        "question": "What is the longest river in China?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.96
+    },
+    {
+        "answer": "correct",
+        "elaps": 10.364178657531738,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/ontology/areaCode> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/ontology/areaCode> ?u_0 .?u_1 <http://dbpedia.org/ontology/areaCode> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "143",
+        "precision": 1.0,
+        "query": " SELECT DISTINCT ?string WHERE { <http://dbpedia.org/resource/Berlin> <http://dbpedia.org/ontology/areaCode> ?string }",
+        "question": "What is the area code of Berlin?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 3.5953049659729004,
+        "features": [
+            "singlevar",
+            "compound",
+            "count"
+        ],
+        "generated_queries": [],
+        "id": "140",
+        "precision": null,
+        "query": "SELECT (COUNT(DISTINCT ?uri) AS ?c) WHERE { ?uri a <http://dbpedia.org/ontology/Scientist> ; <http://dbpedia.org/ontology/almaMater> ?university . ?university <http://dbpedia.org/ontology/affiliation> <http://dbpedia.org/resource/Ivy_League> ; a <http://dbpedia.org/ontology/University> }",
+        "question": "How many scientists graduated from an Ivy League university?",
+        "question_type": [
+            2
+        ],
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.96
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.2778482437133789,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "139",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { { ?uri <http://dbpedia.org/ontology/occupation> <http://dbpedia.org/resource/Surfer> ; <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Australia> } UNION { ?uri <http://dbpedia.org/ontology/occupation> <http://dbpedia.org/resource/Surfer> ; <http://dbpedia.org/ontology/birthPlace> ?place . ?place <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Australia> } }",
+        "question": "Which professional surfers were born in Australia?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9733333333333334
+    },
+    {
+        "answer": "-incorrect",
+        "elaps": 15.19722294807434,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Netherlands> .?u_0 <http://dbpedia.org/ontology/country> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Netherlands>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Netherlands> .?u_1 <http://dbpedia.org/ontology/country> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "137",
+        "precision": 0.004449388209121246,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/PoliticalParty> ; <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Netherlands> }",
+        "question": "Give me all Dutch parties.",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8266666666666667
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.3019437789916992,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "136",
+        "precision": null,
+        "query": "SELECT DISTINCT ?n WHERE { <http://dbpedia.org/resource/Mars> <http://dbpedia.org/property/satellites> ?n }",
+        "question": "How many moons does Mars have?",
+        "question_type": 2,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.92
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.24458789825439453,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "134",
+        "precision": null,
+        "query": "SELECT DISTINCT ?label WHERE { <http://dbpedia.org/resource/Batman> <http://xmlns.com/foaf/0.1/name> ?label FILTER ( str(?label) != \"Batman\" ) }",
+        "question": "What is Batman's real name?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.98
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.2550625801086426,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "132",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Elon_Musk> <http://dbpedia.org/ontology/knownFor> ?uri }",
+        "question": "What is Elon Musk famous for?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9666666666666667
+    },
+    {
+        "answer": "correct",
+        "elaps": 7.449150562286377,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/author> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/WikiLeaks> <http://dbpedia.org/ontology/author> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/WikiLeaks> <http://dbpedia.org/ontology/author> ?u_0 .?u_1 <http://dbpedia.org/ontology/author> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/author> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "128",
+        "precision": 0.00014998500149985002,
+        "query": " SELECT ?uri WHERE { <http://dbpedia.org/resource/WikiLeaks> <http://dbpedia.org/ontology/author> ?uri }",
+        "question": "Who is the author of WikiLeaks?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.248640775680542,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "126",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Sean_Parnell> <http://dbpedia.org/ontology/region> ?uri }",
+        "question": "Sean Parnell was the governor of which U.S. state?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.2689964771270752,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "125",
+        "precision": null,
+        "query": " SELECT ?years WHERE { <http://dbpedia.org/resource/Ford_Model_T> <http://dbpedia.org/ontology/productionEndYear> ?end ; <http://dbpedia.org/ontology/productionStartYear> ?start. BIND ( ( year(<http://www.w3.org/2001/XMLSchema#date(?end))> - year(<http://www.w3.org/2001/XMLSchema#date(?start))> ) AS ?years) }",
+        "question": "How many years was the Ford Model T manufactured?",
+        "question_type": 2,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8733333333333333
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.25327301025390625,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "124",
+        "precision": null,
+        "query": " SELECT DISTINCT xsd:date(?date) WHERE { <http://dbpedia.org/resource/Death_of_Carlo_Giuliani> dbo:deathDate ?date }",
+        "question": "When was Carlo Giuliani shot?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.92
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.42345142364501953,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "123",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Animal> ; <http://dbpedia.org/ontology/conservationStatus> \"EX\" }",
+        "question": "Give me all animals that are extinct.",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.82
+    },
+    {
+        "answer": "correct",
+        "elaps": 16.733339309692383,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": true,
+                "query": "?u_0 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Abraham_Lincoln> .?u_0 <http://dbpedia.org/ontology/spouse> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Abraham_Lincoln> <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Abraham_Lincoln>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Abraham_Lincoln> .?u_1 <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Abraham_Lincoln> <http://dbpedia.org/ontology/spouse> ?u_0 .?u_0 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Abraham_Lincoln>",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Abraham_Lincoln> <http://dbpedia.org/ontology/spouse> ?u_0 .?u_0 <http://dbpedia.org/ontology/spouse> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/spouse> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Abraham_Lincoln> <http://dbpedia.org/ontology/spouse> ?u_0 .?u_1 <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "122",
+        "precision": 0.000349877542859999,
+        "query": " SELECT ?uri ?string WHERE { <http://dbpedia.org/resource/Abraham_Lincoln> <http://dbpedia.org/ontology/spouse> ?uri }",
+        "question": "Who was the wife of President Lincoln?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "correct",
+        "elaps": 1.3460450172424316,
+        "features": [
+            "singlevar",
+            "count",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Bertrand_Russell> <http://dbpedia.org/property/awards> ?u_0",
+                "target_var": "?u_0"
+            }
+        ],
+        "id": "111",
+        "precision": 1.0,
+        "query": " SELECT (COUNT(?Awards) AS ?Counter) WHERE { <http://dbpedia.org/resource/Bertrand_Russell> <http://dbpedia.org/property/awards> ?Awards }",
+        "question": "How many awards has Bertrand Russell?",
+        "question_type": [
+            2
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9533333333333334
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.2845120429992676,
+        "features": [
+            "singlevar",
+            "boolean",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "117",
+        "precision": null,
+        "query": " ASK WHERE { <http://dbpedia.org/resource/Pamela_Anderson> a <http://dbpedia.org/class/yago/WikicatAmericanVegans> }",
+        "question": "Is Pamela Anderson a vegan?",
+        "question_type": 1,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9466666666666667
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.26161623001098633,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "59",
+        "precision": null,
+        "query": " SELECT DISTINCT ?s WHERE { ?s <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Missions_to_the_Sun> ; <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type FILTER ( ?type IN (<http://dbpedia.org/ontology/Satellite,> <http://dbpedia.org/ontology/ArtificialSatellite)> ) }",
+        "question": "Which space probes were sent into orbit around the sun?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9666666666666667
+    },
+    {
+        "answer": "-incorrect",
+        "elaps": 13.540814638137817,
+        "features": [
+            "singlevar",
+            "comparison",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Germany> .?u_0 <http://dbpedia.org/ontology/country> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Germany>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Germany> .?u_1 <http://dbpedia.org/ontology/country> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "113",
+        "precision": 0.0005434782608695652,
+        "query": "SELECT DISTINCT ?uri WHERE { { ?uri a <http://dbpedia.org/ontology/City> } UNION { ?uri a <http://dbpedia.org/ontology/Town> } ?uri <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Germany> ; <http://dbpedia.org/ontology/populationTotal> ?population FILTER ( ?population > 250000 ) }",
+        "question": "Which German cities have more than 250000 inhabitants?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.98
+    },
+    {
+        "answer": "correct",
+        "elaps": 293.57594990730286,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/child> ?u_0 .?u_1 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Robert_F._Kennedy>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> <http://dbpedia.org/resource/Robert_F._Kennedy>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/spouse> ?u_0 .?u_0 <http://dbpedia.org/ontology/spouse> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> ?u_1 .?u_0 <http://dbpedia.org/ontology/spouse> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> ?u_1 .?u_1 <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> <http://dbpedia.org/resource/Robert_F._Kennedy> .?u_0 <http://dbpedia.org/ontology/spouse> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> <http://dbpedia.org/resource/Robert_F._Kennedy> .?u_1 <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> <http://dbpedia.org/resource/Robert_F._Kennedy> .?u_0 <http://dbpedia.org/ontology/child> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/spouse> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/child> ?u_0 .?u_0 <http://dbpedia.org/ontology/spouse> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> <http://dbpedia.org/resource/Robert_F._Kennedy> .?u_1 <http://dbpedia.org/ontology/child> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/spouse> ?u_0 .?u_0 <http://dbpedia.org/ontology/spouse> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/spouse> ?u_0 .?u_1 <http://dbpedia.org/ontology/child> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/child> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/spouse> ?u_0 .?u_1 <http://dbpedia.org/ontology/child> ?u_0 .?u_0 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Robert_F._Kennedy>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> <http://dbpedia.org/resource/Robert_F._Kennedy> .?u_1 <http://dbpedia.org/ontology/spouse> ?u_0 .?u_0 <http://dbpedia.org/ontology/spouse> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> ?u_1 .?u_1 <http://dbpedia.org/ontology/spouse> ?u_0 .?u_0 <http://dbpedia.org/ontology/spouse> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Robert_F._Kennedy> .?u_0 <http://dbpedia.org/ontology/spouse> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> ?u_1 .?u_0 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Robert_F._Kennedy>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Robert_F._Kennedy>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Robert_F._Kennedy> .?u_1 <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/child> ?u_0 .?u_0 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Robert_F._Kennedy>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/spouse> ?u_0 .?u_0 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Robert_F._Kennedy>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/spouse> ?u_0 .?u_0 <http://dbpedia.org/ontology/child> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/spouse> ?u_0 .?u_1 <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> ?u_1 .?u_1 <http://dbpedia.org/ontology/child> ?u_0 .?u_0 <http://dbpedia.org/ontology/spouse> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/spouse> ?u_0 .?u_0 <http://dbpedia.org/ontology/child> ?u_1 .?u_0 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Robert_F._Kennedy>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/child> ?u_0 .?u_1 <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Robert_F._Kennedy>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/child> ?u_0 .?u_1 <http://dbpedia.org/ontology/child> ?u_0 .?u_1 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Robert_F._Kennedy>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/spouse> ?u_0 .?u_1 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Robert_F._Kennedy>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/child> ?u_0 .<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/child> ?u_0 .?u_1 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Robert_F._Kennedy>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/child> ?u_0 .?u_1 <http://dbpedia.org/ontology/child> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/child> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> ?u_1 .?u_1 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Robert_F._Kennedy>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> ?u_1 .<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/child> ?u_0 .?u_0 <http://dbpedia.org/ontology/child> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> <http://dbpedia.org/resource/Robert_F._Kennedy> .?u_1 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Robert_F._Kennedy>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> ?u_1 .?u_1 <http://dbpedia.org/ontology/child> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/child> ?u_0 .?u_1 <http://dbpedia.org/ontology/spouse> ?u_0 .?u_0 <http://dbpedia.org/ontology/spouse> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Robert_F._Kennedy> .?u_1 <http://dbpedia.org/ontology/child> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Robert_F._Kennedy> .?u_0 <http://dbpedia.org/ontology/child> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> ?u_1 .?u_1 <http://dbpedia.org/ontology/child> ?u_0 .?u_1 <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/child> ?u_0 .?u_1 <http://dbpedia.org/ontology/spouse> ?u_0 .?u_0 <http://dbpedia.org/ontology/spouse> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/child> ?u_0 .?u_0 <http://dbpedia.org/ontology/spouse> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/child> ?u_0 .?u_1 <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> ?u_1 .<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/spouse> ?u_0 .?u_0 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Robert_F._Kennedy>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/child> ?u_0 .<http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/spouse> ?u_0 .?u_0 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Robert_F._Kennedy>",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "104",
+        "precision": 0.00025101370921027223,
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Robert_F._Kennedy> <http://dbpedia.org/ontology/child> ?child . ?child <http://dbpedia.org/ontology/spouse> ?uri }",
+        "question": "Who is the daughter of Robert Kennedy married to?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.35879969596862793,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "10",
+        "precision": null,
+        "query": "SELECT DISTINCT ?num WHERE { dbr:Vrije_Universiteit_Amsterdam <http://dbpedia.org/ontology/numberOfStudents> ?num }",
+        "question": "How many students does the Free University of Amsterdam have?",
+        "question_type": 2,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.92
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.23784995079040527,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "1",
+        "precision": null,
+        "query": " SELECT ?number WHERE { <http://dbpedia.org/resource/IBM> <http://dbpedia.org/ontology/revenue> ?number }",
+        "question": "What is the revenue of IBM?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.24973559379577637,
+        "features": [
+            "singlevar",
+            "count",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "178",
+        "precision": null,
+        "query": "SELECT (COUNT(DISTINCT ?uri) AS ?c) WHERE { ?uri dct:subject <http://dbpedia.org/resource/Category:James_Bond_films> }",
+        "question": "How many James Bond movies do exist?",
+        "question_type": 2,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.92
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.27225470542907715,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "129",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Bart_Simpson> <http://dbpedia.org/property/voiceactor> ?uri }",
+        "question": "Who does the voice of Bart Simpson?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8266666666666667
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.24245953559875488,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "183",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { dbr:Tom_Hanks <http://dbpedia.org/ontology/spouse> ?uri }",
+        "question": "Who was Tom Hanks married to?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9933333333333333
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.2580714225769043,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "181",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Yenisei_River> <http://dbpedia.org/ontology/country> ?uri }",
+        "question": "Through which countries does the Yenisei river flow?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.98
+    },
+    {
+        "answer": "-incorrect",
+        "elaps": 86.09242153167725,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/manufacturer> <http://dbpedia.org/resource/Germany> .?u_0 <http://dbpedia.org/property/manufacturer> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/property/manufacturer> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/manufacturer> <http://dbpedia.org/resource/Germany>",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "7",
+        "precision": 0.002499000399840064,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Automobile> { ?uri <http://dbpedia.org/ontology/assembly> <http://dbpedia.org/resource/Germany> } UNION { ?uri <http://dbpedia.org/property/assembly> <http://dbpedia.org/resource/Germany> } UNION { { ?uri <http://dbpedia.org/ontology/manufacturer> ?x } UNION { ?uri <http://dbpedia.org/property/manufacturer> ?x } { ?x <http://dbpedia.org/ontology/locationCountry> <http://dbpedia.org/resource/Germany> } UNION { ?x <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/Germany> } } }",
+        "question": "Give me all cars that are produced in Germany.",
+        "question_type": [
+            0
+        ],
+        "recall": 0.14792899408284024,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8533333333333334
+    },
+    {
+        "answer": "correct",
+        "elaps": 10.377739429473877,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Michael_Jackson> <http://dbpedia.org/ontology/deathDate> ?u_0 .?u_1 <http://dbpedia.org/ontology/deathDate> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Michael_Jackson> <http://dbpedia.org/ontology/deathDate> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "135",
+        "precision": 1.0,
+        "query": "SELECT DISTINCT ?date WHERE { <http://dbpedia.org/resource/Michael_Jackson> <http://dbpedia.org/ontology/deathDate> ?date }",
+        "question": "When did Michael Jackson die?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9266666666666666
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.33410096168518066,
+        "features": [
+            "singlevar",
+            "sort",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "50",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Volcano> ; <http://dbpedia.org/ontology/locatedInArea> ?area . ?area dct:subject dbc:Countries_in_Africa . ?uri <http://dbpedia.org/ontology/elevation> ?elevation } ORDER BY DESC(?elevation) LIMIT 1",
+        "question": "What is the highest volcano in Africa?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.96
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.9638676643371582,
+        "features": [
+            "singlevar",
+            "sort",
+            "compound",
+            "count"
+        ],
+        "generated_queries": [],
+        "id": "39",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/occupation> <http://dbpedia.org/resource/Poet> . ?x <http://dbpedia.org/ontology/author> ?uri . ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Book> . } ORDER BY DESC(COUNT(?x)) OFFSET 0 LIMIT 1",
+        "question": "Which poet wrote the most books?",
+        "question_type": [
+            0
+        ],
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9266666666666666
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.2707247734069824,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "83",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/occupation> <http://dbpedia.org/resource/Gangster> ; <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Prohibition-era_gangsters> }",
+        "question": "Give me all gangsters from the prohibition era.",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.7866666666666666
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.26073241233825684,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "71",
+        "precision": null,
+        "query": " SELECT DISTINCT ?s WHERE { ?s <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Mars_rovers> ; <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type FILTER ( ?type IN (<http://dbpedia.org/ontology/Satellite,> <http://dbpedia.org/ontology/ArtificialSatellite)> ) }",
+        "question": "Give me all spacecrafts that flew to Mars.",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.6933333333333334
+    },
+    {
+        "answer": "-incorrect",
+        "elaps": 18.941833972930908,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Czech_Republic> .?u_0 <http://dbpedia.org/ontology/country> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Czech_Republic>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Czech_Republic> .?u_1 <http://dbpedia.org/ontology/country> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "213",
+        "precision": 0.010234971889865937,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Film> ; <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Czech_Republic> }",
+        "question": "Show me all Czech movies.",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.84
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.2695350646972656,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "209",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { { ?uri a <http://dbpedia.org/ontology/Astronaut> ; <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/People's_Republic_of_China> } UNION { ?uri a <http://dbpedia.org/ontology/Astronaut> ; <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/China> } }",
+        "question": "Give me all taikonauts.",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8266666666666667
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.27204394340515137,
+        "features": [
+            "singlevar",
+            "comparison",
+            "compound",
+            "count"
+        ],
+        "generated_queries": [],
+        "id": "105",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { ?x a <http://dbpedia.org/ontology/Volcano> ; <http://dbpedia.org/ontology/locatedInArea> ?uri . ?uri a <http://dbpedia.org/ontology/Country> } GROUP BY ?uri HAVING ( COUNT(?x) > 10 )",
+        "question": "Which countries have more than ten volcanoes?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9933333333333333
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 5.7071568965911865,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "52",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> { ?uri <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Tom_Cruise> } UNION { ?uri <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Tom_Cruise> } OPTIONAL { ?uri <http://www.w3.org/2000/01/rdf-schema#label> ?string FILTER ( lang(?string) = \"en\" ) } }",
+        "question": "Give me all movies with Tom Cruise.",
+        "question_type": [
+            0
+        ],
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.7933333333333333
+    },
+    {
+        "answer": "correct",
+        "elaps": 12.283009052276611,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/creator> <http://dbpedia.org/resource/Count_Dracula>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Count_Dracula> <http://dbpedia.org/ontology/creator> ?u_0 .?u_0 <http://dbpedia.org/ontology/deathDate> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Count_Dracula> <http://dbpedia.org/ontology/creator> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "102",
+        "precision": 0.3333333333333333,
+        "query": "SELECT DISTINCT xsd:date(?date) WHERE { <http://dbpedia.org/resource/Count_Dracula> <http://dbpedia.org/ontology/creator> ?x . ?x <http://dbpedia.org/ontology/deathDate> ?date. }",
+        "question": "When did Dracula's creator die?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9466666666666667
+    },
+    {
+        "answer": "correct",
+        "elaps": 7.356426239013672,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/author> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Wikipedia> <http://dbpedia.org/ontology/author> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Wikipedia> <http://dbpedia.org/ontology/author> ?u_0 .?u_1 <http://dbpedia.org/ontology/author> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/author> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "21",
+        "precision": 0.00029994001199760045,
+        "query": " SELECT ?uri WHERE { <http://dbpedia.org/resource/Wikipedia> <http://dbpedia.org/ontology/author> ?uri }",
+        "question": "Who created English Wikipedia?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8466666666666667
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.343461275100708,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "34",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Chancellor_of_Germany> <http://dbpedia.org/property/incumbent> ?uri }",
+        "question": "Give me all female German chancellors.",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8266666666666667
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.3628807067871094,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "145",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Aldi> <http://dbpedia.org/property/founders> ?uri }",
+        "question": "Who owns Aldi?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9666666666666667
+    },
+    {
+        "answer": "correct",
+        "elaps": 4.62859034538269,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": true,
+                "query": "?u_0 <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/Danielle_Steel> .?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Book>",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Book>",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/Danielle_Steel>",
+                "target_var": "?u_0"
+            }
+        ],
+        "id": "154",
+        "precision": 0.9642857142857143,
+        "query": " SELECT ?uri WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Book> ; <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/Danielle_Steel> }",
+        "question": "Which books were written by Danielle Steel?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.98
+    },
+    {
+        "answer": "correct",
+        "elaps": 18.49746870994568,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": true,
+                "query": "?u_0 <http://dbpedia.org/ontology/influencedBy> <http://dbpedia.org/resource/Socrates> .?u_0 <http://dbpedia.org/ontology/influencedBy> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/influencedBy> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/influencedBy> <http://dbpedia.org/resource/Socrates>",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Socrates> <http://dbpedia.org/ontology/influencedBy> ?u_0",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/influencedBy> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Socrates> <http://dbpedia.org/ontology/influencedBy> ?u_0 .?u_1 <http://dbpedia.org/ontology/influencedBy> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Socrates> <http://dbpedia.org/ontology/influencedBy> ?u_0 .?u_0 <http://dbpedia.org/ontology/influencedBy> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/influencedBy> <http://dbpedia.org/resource/Socrates> .?u_1 <http://dbpedia.org/ontology/influencedBy> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "198",
+        "precision": 0.01604488630770745,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/influencedBy> <http://dbpedia.org/resource/Socrates> }",
+        "question": "Who was influenced by Socrates?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.7933333333333333
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.30249595642089844,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "162",
+        "precision": null,
+        "query": "SELECT DISTINCT ?n WHERE { <http://dbpedia.org/resource/Chiemsee> <http://dbpedia.org/ontology/maximumDepth> ?n }",
+        "question": "How deep is Lake Chiemsee?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.66
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.2724184989929199,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "212",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Company> ; <http://dbpedia.org/ontology/industry> <http://dbpedia.org/resource/Aerospace> ; <http://dbpedia.org/ontology/industry> <http://dbpedia.org/resource/Medical> }",
+        "question": "Which companies work in the aerospace industry as well as in medicine?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9333333333333333
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.26279234886169434,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "96",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/occupation> <http://dbpedia.org/resource/Surfer> ; <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Philippines> }",
+        "question": "Which professional surfers were born on the Philippines?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.94
+    },
+    {
+        "answer": "correct",
+        "elaps": 14.642925262451172,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/parent> <http://dbpedia.org/resource/Queen_Victoria> .?u_0 <http://dbpedia.org/ontology/parent> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/parent> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/parent> <http://dbpedia.org/resource/Queen_Victoria>",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Queen_Victoria> <http://dbpedia.org/ontology/parent> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/parent> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Queen_Victoria> <http://dbpedia.org/ontology/parent> ?u_0 .?u_1 <http://dbpedia.org/ontology/parent> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Queen_Victoria> <http://dbpedia.org/ontology/parent> ?u_0 .?u_0 <http://dbpedia.org/ontology/parent> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/parent> <http://dbpedia.org/resource/Queen_Victoria> .?u_1 <http://dbpedia.org/ontology/parent> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "40",
+        "precision": 0.0002996404314822213,
+        "query": " SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Queen_Victoria> <http://dbpedia.org/ontology/parent> ?uri }",
+        "question": "Who were the parents of Queen Victoria?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9533333333333334
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.2635529041290283,
+        "features": [
+            "singlevar",
+            "boolean",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "79",
+        "precision": null,
+        "query": " ASK WHERE { ?uri <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Castles_in_the_United_States> }",
+        "question": "Are there any castles in the United States?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.7333333333333333
+    },
+    {
+        "answer": "correct",
+        "elaps": 12.89000415802002,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/spokenIn> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": true,
+                "query": "?u_0 <http://dbpedia.org/ontology/spokenIn> <http://dbpedia.org/resource/Estonia>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/spokenIn> <http://dbpedia.org/resource/Estonia> .?u_0 <http://dbpedia.org/ontology/spokenIn> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/spokenIn> ?u_1",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "141",
+        "precision": 0.0029806259314456036,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/spokenIn> <http://dbpedia.org/resource/Estonia> }",
+        "question": "Which languages are spoken in Estonia?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.92
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.2652881145477295,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "80",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri ?p WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Bird> { ?uri <http://dbpedia.org/ontology/conservationStatus> \"CR\" } UNION { ?uri <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Critically_endangered_animals> } }",
+        "question": "Give me a list of all critically endangered birds.",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8466666666666667
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.2548975944519043,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "159",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { {<http://dbpedia.org/resource/Rhine> <http://dbpedia.org/ontology/country> ?uri } UNION {dbr:Rhine <http://dbpedia.org/property/country> ?uri} }",
+        "question": "Which countries are connected by the Rhine?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9733333333333334
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.6068298816680908,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "107",
+        "precision": null,
+        "query": " SELECT DISTINCT * WHERE { <http://dbpedia.org/resource/Elizabeth_II> <http://dbpedia.org/ontology/parent> ?uri . ?uri <http://xmlns.com/foaf/0.1/gender> \"male\"@en }",
+        "question": "Who was the father of Queen Elizabeth II?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9533333333333334
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.26302242279052734,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "163",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> ; <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Chemical_elements> }",
+        "question": "Give me all chemical elements.",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8266666666666667
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.28670668601989746,
+        "features": [
+            "singlevar",
+            "comparison",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "211",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Person> ; <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Presidents_of_the_United_States> ; <http://dbpedia.org/ontology/activeYearsEndDate> ?termEnd FILTER ( ( year(now()) - year(?termEnd) ) <=> 20 ) }",
+        "question": "Give me all American presidents of the last 20 years.",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.7266666666666667
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.29529738426208496,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "51",
+        "precision": null,
+        "query": " SELECT DISTINCT ?rel WHERE { <http://dbpedia.org/resource/Worst_Case_Scenario_(film)> ?p ?o ; <http://dbpedia.org/ontology/releaseDate> ?rel FILTER contains(lcase(str(?o)), \"netherlands\") }",
+        "question": "When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.86
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.26347923278808594,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "144",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { {<http://dbpedia.org/resource/Lance_Bass> dbo:spouse ?uri} UNION {?uri dbo:spouse <http://dbpedia.org/resource/Lance_Bass>} }",
+        "question": "Whom did Lance Bass marry?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9533333333333334
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.2651810646057129,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "167",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/TUI_Travel> <http://dbpedia.org/ontology/subsidiary> ?uri . ?uri <http://dbpedia.org/ontology/targetAirport> <http://dbpedia.org/resource/Glasgow_International_Airport> ; <http://dbpedia.org/ontology/targetAirport> <http://dbpedia.org/resource/Dublin_Airport> }",
+        "question": "Which subsidiary of TUI Travel serves both Glasgow and Dublin?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9933333333333333
+    },
+    {
+        "answer": "correct",
+        "elaps": 21.249772548675537,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/language> <http://dbpedia.org/resource/Pakistan> .?u_0 <http://dbpedia.org/ontology/language> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/language> <http://dbpedia.org/resource/Pakistan>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Pakistan> <http://dbpedia.org/ontology/language> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Pakistan> <http://dbpedia.org/ontology/language> ?u_0 .?u_1 <http://dbpedia.org/ontology/language> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "131",
+        "precision": 0.6666666666666666,
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Pakistan> <http://dbpedia.org/ontology/language> ?uri }",
+        "question": "What languages are spoken in Pakistan?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8733333333333333
+    },
+    {
+        "answer": "correct",
+        "elaps": 30.393656969070435,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Bill_Clinton> <http://dbpedia.org/ontology/child> ?u_0 .?u_0 <http://dbpedia.org/ontology/spouse> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/spouse> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Bill_Clinton> <http://dbpedia.org/ontology/child> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Bill_Clinton> <http://dbpedia.org/ontology/child> ?u_0 .?u_1 <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Bill_Clinton> <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Bill_Clinton> <http://dbpedia.org/ontology/spouse> ?u_0 .?u_1 <http://dbpedia.org/ontology/child> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/child> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Bill_Clinton> <http://dbpedia.org/ontology/spouse> ?u_0 .?u_0 <http://dbpedia.org/ontology/child> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Bill_Clinton>",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Bill_Clinton> .?u_1 <http://dbpedia.org/ontology/child> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Bill_Clinton> .?u_0 <http://dbpedia.org/ontology/child> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> <http://dbpedia.org/resource/Bill_Clinton> .?u_0 <http://dbpedia.org/ontology/spouse> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> <http://dbpedia.org/resource/Bill_Clinton>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/child> <http://dbpedia.org/resource/Bill_Clinton> .?u_1 <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "120",
+        "precision": 4.99775101204458e-05,
+        "query": " SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Bill_Clinton> <http://dbpedia.org/ontology/child> ?child . ?child <http://dbpedia.org/ontology/spouse> ?uri . ?uri <http://www.w3.org/2000/01/rdf-schema#label> ?string }",
+        "question": "Who is the daughter of Bill Clinton married to?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.34162187576293945,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "164",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Apollo_11> <http://dbpedia.org/property/crewMembers> ?uri }",
+        "question": "Who was on the Apollo 11 mission?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.88
+    },
+    {
+        "answer": "correct",
+        "elaps": 9.467410802841187,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Indigo> <http://dbpedia.org/ontology/wavelength> ?u_0 .?u_1 <http://dbpedia.org/ontology/wavelength> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/wavelength> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Indigo> <http://dbpedia.org/ontology/wavelength> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/wavelength> ?u_1",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "88",
+        "precision": 0.10714285714285714,
+        "query": " SELECT ?n WHERE { <http://dbpedia.org/resource/Indigo> <http://dbpedia.org/ontology/wavelength> ?n }",
+        "question": "What is the wavelength of Indigo?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.4761176109313965,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "151",
+        "precision": null,
+        "query": " SELECT DISTINCT ?string WHERE { ?x <http://dbpedia.org/ontology/musicalArtist> <http://dbpedia.org/resource/Ramones> ; <http://dbpedia.org/ontology/bSide> ?string }",
+        "question": "Give me all B-sides of the Ramones.",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.7533333333333333
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 1.7315824031829834,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "63",
+        "precision": null,
+        "query": " SELECT ?uri WHERE { ?uri <http://dbpedia.org/ontology/alias> ?alias FILTER contains(lcase(?alias), \"scarface\") }",
+        "question": "Who was called Scarface?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9466666666666667
+    },
+    {
+        "answer": "correct",
+        "elaps": 7.545921564102173,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": true,
+                "query": "?u_0 <http://dbpedia.org/ontology/riverMouth> <http://dbpedia.org/resource/North_Sea> .?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/River>",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/River>",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/riverMouth> <http://dbpedia.org/resource/North_Sea>",
+                "target_var": "?u_0"
+            }
+        ],
+        "id": "27",
+        "precision": 0.9850746268656716,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/River> ; <http://dbpedia.org/ontology/riverMouth> <http://dbpedia.org/resource/North_Sea> }",
+        "question": "Which rivers flow into the North Sea?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9133333333333333
+    },
+    {
+        "answer": "-incorrect",
+        "elaps": 21.15064764022827,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Fort_Knox> <http://dbpedia.org/ontology/location> ?u_0 .?u_1 <http://dbpedia.org/ontology/location> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Fort_Knox> <http://dbpedia.org/ontology/location> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/Fort_Knox>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/Fort_Knox> .?u_0 <http://dbpedia.org/ontology/location> ?u_1",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "156",
+        "precision": 0.25,
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Fort_Knox> <http://dbpedia.org/ontology/location> ?uri. ?uri a <http://dbpedia.org/ontology/Place>. }",
+        "question": "Where is Fort Knox located?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.4470236301422119,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "207",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/class/yago/WikicatDaughtersOfBritishEarls> ; <http://dbpedia.org/ontology/birthPlace> ?x ; <http://dbpedia.org/ontology/deathPlace> ?y FILTER ( ?x = ?y ) }",
+        "question": "Which daughters of British earls died at the same place they were born at?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9466666666666667
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.26317286491394043,
+        "features": [
+            "singlevar",
+            "count",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "24",
+        "precision": null,
+        "query": "SELECT COUNT(DISTINCT ?uri AS ?uri) WHERE { ?uri <http://dbpedia.org/property/title> <http://dbpedia.org/resource/Emperor_of_China> . }",
+        "question": "How many emperors did China have?",
+        "question_type": 2,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.92
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.5103394985198975,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "133",
+        "precision": null,
+        "query": " SELECT DISTINCT ?s WHERE { <http://dbpedia.org/resource/Teenage_Mutant_Ninja_Turtles> <http://dbpedia.org/property/members> ?x . ?x foaf:givenName ?s }",
+        "question": "What are the names of the Teenage Mutant Ninja Turtles?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "correct",
+        "elaps": 7.3087170124053955,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/routeStart> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": true,
+                "query": "?u_0 <http://dbpedia.org/ontology/routeStart> <http://dbpedia.org/resource/Piccadilly>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/routeStart> <http://dbpedia.org/resource/Piccadilly> .?u_0 <http://dbpedia.org/ontology/routeStart> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/routeStart> ?u_1",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "103",
+        "precision": 9.999000099990002e-05,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/routeStart> <http://dbpedia.org/resource/Piccadilly> }",
+        "question": "Where does Piccadilly start?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.96
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.26764822006225586,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "165",
+        "precision": null,
+        "query": "SELECT DISTINCT ?s WHERE { <http://dbpedia.org/resource/Barack_Obama> <http://dbpedia.org/ontology/spouse> ?x . ?x <http://dbpedia.org/ontology/almaMater> ?s }",
+        "question": "What is the name of the university where Obama's wife studied?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.2517414093017578,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "108",
+        "precision": null,
+        "query": "SELECT DISTINCT ?date WHERE { <http://dbpedia.org/resource/Paraguay> <http://dbpedia.org/ontology/foundingDate> ?date }",
+        "question": "When did Paraguay proclaim its independence?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9333333333333333
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.7850744724273682,
+        "features": [
+            "singlevar",
+            "sort",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "15",
+        "precision": null,
+        "query": "SELECT DISTINCT ?n WHERE { ?x a <http://dbpedia.org/ontology/BasketballPlayer> ; <http://dbpedia.org/ontology/league> <http://dbpedia.org/resource/National_Basketball_Association> ; <http://dbpedia.org/ontology/height> ?n FILTER NOT EXISTS { ?x <http://dbpedia.org/ontology/activeYearsEndYear> ?d } } ORDER BY ASC(?n) OFFSET 0 LIMIT 1",
+        "question": "How short is the shortest active NBA player?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.74
+    },
+    {
+        "answer": "correct",
+        "elaps": 10.60947561264038,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Abraham_Lincoln> <http://dbpedia.org/ontology/deathPlace> ?u_0 .?u_1 <http://dbpedia.org/ontology/deathPlace> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Abraham_Lincoln> <http://dbpedia.org/ontology/deathPlace> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "45",
+        "precision": 1.0,
+        "query": " SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Abraham_Lincoln> <http://dbpedia.org/ontology/deathPlace> ?uri }",
+        "question": "Where did Abraham Lincoln die?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9866666666666667
+    },
+    {
+        "answer": "-incorrect",
+        "elaps": 9.131330966949463,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/foundingYear> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Jack_Wolfskin> <http://dbpedia.org/ontology/foundingYear> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Jack_Wolfskin> <http://dbpedia.org/ontology/foundingYear> ?u_0 .?u_1 <http://dbpedia.org/ontology/foundingYear> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/foundingYear> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "82",
+        "precision": 0.0,
+        "query": " SELECT DISTINCT xsd:date(?year) WHERE { <http://dbpedia.org/resource/Jack_Wolfskin> <http://dbpedia.org/ontology/foundingYear> ?year }",
+        "question": "When was Jack Wolfskin founded?",
+        "question_type": [
+            0
+        ],
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.96
+    },
+    {
+        "answer": "-incorrect",
+        "elaps": 10.517176151275635,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Air_China> <http://dbpedia.org/ontology/headquarter> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Air_China> <http://dbpedia.org/ontology/headquarter> ?u_0 .?u_1 <http://dbpedia.org/ontology/headquarter> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "9",
+        "precision": 0.5,
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Air_China> <http://dbpedia.org/ontology/headquarter> ?uri . ?uri a <http://dbpedia.org/class/yago/City108524735> }",
+        "question": "In which city is the headquarter of Air China?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.38494348526000977,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "201",
+        "precision": null,
+        "query": " SELECT DISTINCT xsd:date(?num) WHERE { <http://dbpedia.org/resource/Pilsner_Urquell> <http://dbpedia.org/property/brewery> ?uri . ?uri <http://dbpedia.org/ontology/foundingYear> ?num }",
+        "question": "What is the founding year of the brewery that produces Pilsner Urquell?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9933333333333333
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.25847601890563965,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "171",
+        "precision": null,
+        "query": "SELECT DISTINCT ?d WHERE { <http://dbpedia.org/resource/Boston_Tea_Party> <http://dbpedia.org/property/date> ?d }",
+        "question": "When did the Boston Tea Party take place?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.94
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.32790088653564453,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "182",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Animal> ; <http://dbpedia.org/ontology/conservationStatus> \"CR\" }",
+        "question": "Which animals are critically endangered?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9866666666666667
+    },
+    {
+        "answer": "-incorrect",
+        "elaps": 48.27115035057068,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Germany> .?u_0 <http://dbpedia.org/ontology/spouse> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Germany> .?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Politician>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Germany> .?u_1 <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Germany> .?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Politician> .?u_1 <http://dbpedia.org/ontology/spouse> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Germany>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/spouse> ?u_1",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "13",
+        "precision": 0.000349582443192853,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Politician> ; <http://dbpedia.org/ontology/spouse> ?spouse { ?spouse <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Germany> } UNION { ?spouse <http://dbpedia.org/ontology/birthPlace> ?p . ?p <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Germany> } }",
+        "question": "Which politicians were married to a German?",
+        "question_type": [
+            0
+        ],
+        "recall": 0.45,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.38509321212768555,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "114",
+        "precision": null,
+        "query": " SELECT DISTINCT (( xsd:double(?radius) * 2 ) AS ?diameter) WHERE { <http://dbpedia.org/resource/Earth> <http://dbpedia.org/ontology/meanRadius> ?radius }",
+        "question": "How big is the earth's diameter?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.7333333333333333
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.29535508155822754,
+        "features": [
+            "singlevar",
+            "boolean",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "92",
+        "precision": null,
+        "query": " ASK WHERE { <http://dbpedia.org/resource/Barack_Obama> <http://dbpedia.org/ontology/spouse> ?spouse . ?spouse <http://www.w3.org/2000/01/rdf-schema#label> ?name FILTER regex(?name, \"Michelle\") }",
+        "question": "Is the wife of President Obama called Michelle?",
+        "question_type": [
+            1
+        ],
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9333333333333333
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.4693892002105713,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "194",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a yago:WikicatStatesOfTheUnitedStates ; <http://dbpedia.org/property/postalabbreviation> \"MN\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> }",
+        "question": "Which U.S. state has the abbreviation MN?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8333333333333334
+    },
+    {
+        "answer": "correct",
+        "elaps": 10.198417663574219,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Muhammad> <http://dbpedia.org/ontology/deathDate> ?u_0 .?u_1 <http://dbpedia.org/ontology/deathDate> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Muhammad> <http://dbpedia.org/ontology/deathDate> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "175",
+        "precision": 1.0,
+        "query": " SELECT DISTINCT xsd:date(?date) WHERE { <http://dbpedia.org/resource/Muhammad> <http://dbpedia.org/ontology/deathDate> ?date }",
+        "question": "When did Muhammad die?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9466666666666667
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.40888500213623047,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "26",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Moon> <http://dbpedia.org/property/atmosphereComposition> ?uri }",
+        "question": "What is the atmosphere of the Moon composed of?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9866666666666667
+    },
+    {
+        "answer": "correct",
+        "elaps": 9.751787424087524,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Texas> <http://dbpedia.org/property/governor> ?u_0 .?u_0 <http://dbpedia.org/property/governor> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/property/governor> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Texas> <http://dbpedia.org/property/governor> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Texas> <http://dbpedia.org/property/governor> ?u_0 .?u_1 <http://dbpedia.org/property/governor> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/property/governor> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "60",
+        "precision": 0.0007365804253751957,
+        "query": " SELECT DISTINCT ?string WHERE { <http://dbpedia.org/resource/Texas> <http://dbpedia.org/property/governor> ?string }",
+        "question": "Who is the governor of Texas?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "correct",
+        "elaps": 5.282655239105225,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": true,
+                "query": "?u_0 <http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/Akira_Kurosawa> .?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film>",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film>",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/Akira_Kurosawa>",
+                "target_var": "?u_0"
+            }
+        ],
+        "id": "110",
+        "precision": 0.9846153846153847,
+        "query": " SELECT ?uri WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> ; <http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/Akira_Kurosawa> }",
+        "question": "Which movies did Kurosawa direct?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9866666666666667
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.2659153938293457,
+        "features": [
+            "singlevar",
+            "comparison",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "206",
+        "precision": null,
+        "query": " SELECT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/MilitaryConflict> ; <http://dbpedia.org/ontology/place> <http://dbpedia.org/resource/San_Antonio> ; <http://dbpedia.org/ontology/date> ?date FILTER ( ?date > \"1835-12-31T00:00:00Z\"^^xsd:dateTime ) FILTER ( ?date <=> \"1836-12-31T00:00:00Z\"^^xsd:dateTime ) }",
+        "question": "What was the name of the famous battle in 1836 in San Antonio?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.94
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.4973783493041992,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "97",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Charmed> <http://dbpedia.org/ontology/starring> ?actors . ?actors <http://xmlns.com/foaf/0.1/homepage> ?uri }",
+        "question": "Give me the official websites of actors of the television show Charmed.",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8266666666666667
+    },
+    {
+        "answer": "-incorrect",
+        "elaps": 1.8084375858306885,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Baguette> <http://dbpedia.org/property/calories> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "20",
+        "precision": 0.0,
+        "query": "SELECT DISTINCT ?n WHERE { <http://dbpedia.org/resource/Baguette> <http://dbpedia.org/property/calories> ?n }",
+        "question": "How many calories does a baguette have?",
+        "question_type": [
+            2
+        ],
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.92
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.594569206237793,
+        "features": [
+            "singlevar",
+            "comparison",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "169",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Library> ; <http://dbpedia.org/property/established> ?year FILTER ( ?year < 1400 ) }",
+        "question": "Give me all libraries established before 1400.",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8266666666666667
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.26770782470703125,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "38",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/class/yago/WikicatFrisianIslands> ; <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Netherlands> }",
+        "question": "Give me all Frisian islands that belong to the Netherlands.",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8666666666666667
+    },
+    {
+        "answer": "correct",
+        "elaps": 6.498552560806274,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/museum> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/The_Scream> <http://dbpedia.org/ontology/museum> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/The_Scream> <http://dbpedia.org/ontology/museum> ?u_0 .?u_1 <http://dbpedia.org/ontology/museum> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/museum> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "192",
+        "precision": 0.0009358914365933552,
+        "query": " SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/The_Scream> <http://dbpedia.org/ontology/museum> ?uri }",
+        "question": "Which museum exhibits The Scream by Munch?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.86
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.2507486343383789,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "78",
+        "precision": null,
+        "query": " SELECT DISTINCT xsd:date(?date) WHERE { <http://dbpedia.org/resource/De_Beers> <http://dbpedia.org/ontology/foundingYear> ?date }",
+        "question": "When was the De Beers company founded?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9333333333333333
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.4032905101776123,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "19",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/John_F._Kennedy> <http://dbpedia.org/property/presidentEnd> ?x . ?uri <http://dbpedia.org/property/presidentStart> ?x; a <http://dbpedia.org/ontology/Person>. }",
+        "question": "Who became president after JFK died?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9733333333333334
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.2418065071105957,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "190",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Juan_Carlos_I_of_Spain> <http://dbpedia.org/ontology/spouse> ?x . ?x <http://dbpedia.org/ontology/parent> ?uri }",
+        "question": "Who are the parents of the wife of Juan Carlos I?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9933333333333333
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.25972986221313477,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "174",
+        "precision": null,
+        "query": " SELECT ?Novelist WHERE { <http://dbpedia.org/resource/A_Song_of_Ice_and_Fire> <http://dbpedia.org/property/author> ?Novelist }",
+        "question": "Who is the novelist of the work a song of ice and fire?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9866666666666667
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 4.2497992515563965,
+        "features": [
+            "singlevar",
+            "sort",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "189",
+        "precision": null,
+        "query": " SELECT ?studio WHERE { ?album <http://dbpedia.org/ontology/artist> <http://dbpedia.org/resource/The_Beatles> ; <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Album> ; <http://dbpedia.org/ontology/releaseDate> ?date ; <http://dbpedia.org/property/studio> ?studio } ORDER BY ASC(?date) LIMIT 1",
+        "question": "In which studio did the Beatles record their first album?",
+        "question_type": [
+            0
+        ],
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9266666666666666
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.26960110664367676,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "152",
+        "precision": null,
+        "query": " SELECT ?company WHERE { ?company <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Companies_based_in_North_Rhine-Westphalia> ; <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Brewery> }",
+        "question": "Which beer brewing companies are located in North-Rhine Westphalia?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.94
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.3300621509552002,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "94",
+        "precision": null,
+        "query": "SELECT DISTINCT xsd:date(?d) WHERE { <http://dbpedia.org/resource/Diana,_Princess_of_Wales> <http://dbpedia.org/ontology/deathDate> ?d }",
+        "question": "When did princess Diana die?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9466666666666667
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.26613831520080566,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "8",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Intel> <http://dbpedia.org/property/founders> ?uri }",
+        "question": "Who founded Intel?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.98
+    },
+    {
+        "answer": "-incorrect",
+        "elaps": 13.021823406219482,
+        "features": [
+            "singlevar",
+            "sort",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/league> <http://dbpedia.org/resource/Premier_League> .?u_0 <http://dbpedia.org/ontology/league> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/league> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/league> <http://dbpedia.org/resource/Premier_League>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/league> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "95",
+        "precision": 0.0,
+        "query": " SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/team> ?team . ?league <http://dbpedia.org/ontology/league> <http://dbpedia.org/resource/Premier_League> . ?league <http://dbpedia.org/ontology/team> ?team . ?uri <http://dbpedia.org/ontology/birthDate> ?date } ORDER BY DESC(?date) LIMIT 1",
+        "question": "Who is the youngest player in the Premier League?",
+        "question_type": [
+            0
+        ],
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9
+    },
+    {
+        "answer": "correct",
+        "elaps": 9.772708892822266,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/instrument> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Cat_Stevens> <http://dbpedia.org/ontology/instrument> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Cat_Stevens> <http://dbpedia.org/ontology/instrument> ?u_0 .?u_1 <http://dbpedia.org/ontology/instrument> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/instrument> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "119",
+        "precision": 0.0005293806246691371,
+        "query": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Cat_Stevens> <http://dbpedia.org/ontology/instrument> ?uri }",
+        "question": "Which instruments does Cat Stevens play?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9266666666666666
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.2641134262084961,
+        "features": [
+            "singlevar",
+            "compound",
+            "count"
+        ],
+        "generated_queries": [],
+        "id": "115",
+        "precision": null,
+        "query": " SELECT (COUNT(DISTINCT ?uri) AS ?count) WHERE { { ?uri <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/South_Carolina> ; <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Lake> } UNION { ?uri <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Rivers_and_streams_of_South_Carolina> } }",
+        "question": "How many rivers and lakes are in South Carolina?",
+        "question_type": 2,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9266666666666666
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.3862426280975342,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "116",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri <http://xmlns.com/foaf/0.1/nick> \"Rodzilla\"@en }",
+        "question": "Who was called Rodzilla?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9466666666666667
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.256638765335083,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "138",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { ?country <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Countries_in_Africa> ; <http://dbpedia.org/ontology/capital> ?uri }",
+        "question": "Give me the capitals of all countries in Africa.",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.86
+    },
+    {
+        "answer": "correct",
+        "elaps": 40.74193239212036,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/type> ?u_1 .?u_1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Bridge>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Manhattan_Bridge> <http://dbpedia.org/ontology/type> ?u_0 .?u_1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Bridge>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Bridge>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Manhattan_Bridge> <http://dbpedia.org/ontology/type> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/type> ?u_1 .?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Bridge>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Manhattan_Bridge> <http://dbpedia.org/ontology/type> ?u_0 .?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Bridge>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Bridge>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Manhattan_Bridge> <http://dbpedia.org/ontology/type> ?u_0 .?u_1 <http://dbpedia.org/ontology/type> ?u_0 .?u_1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Bridge>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/type> ?u_0 .?u_1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Bridge>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Manhattan_Bridge> <http://dbpedia.org/ontology/type> ?u_0 .?u_1 <http://dbpedia.org/ontology/type> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Manhattan_Bridge> <http://dbpedia.org/ontology/type> ?u_0 .?u_1 <http://dbpedia.org/ontology/type> ?u_0 .?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Bridge>",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/type> ?u_0 .?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Bridge>",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "177",
+        "precision": 0.09517485613103142,
+        "query": " SELECT DISTINCT ?bridge WHERE { <http://dbpedia.org/resource/Manhattan_Bridge> <http://dbpedia.org/ontology/type> ?type . ?bridge <http://dbpedia.org/ontology/type> ?type ; <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Bridge> }",
+        "question": "Which bridges are of the same type as the Manhattan Bridge?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.94
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 1.248546838760376,
+        "features": [
+            "singlevar",
+            "compound",
+            "count"
+        ],
+        "generated_queries": [],
+        "id": "101",
+        "precision": null,
+        "query": "SELECT (COUNT(DISTINCT ?x) AS ?c) WHERE { <http://dbpedia.org/resource/Facebook> <http://dbpedia.org/ontology/foundedBy> ?uri . ?x <http://dbpedia.org/ontology/foundedBy> ?uri }",
+        "question": "How many companies were founded by the founder of Facebook?",
+        "question_type": [
+            2
+        ],
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9733333333333334
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.4509568214416504,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "14",
+        "precision": null,
+        "query": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/property/trailheads> <http://dbpedia.org/resource/Grand_Canyon> FILTER NOT EXISTS { ?uri <http://dbpedia.org/property/hazards> <http://dbpedia.org/resource/Flash_flood> } }",
+        "question": "Show me hiking trails in the Grand Canyon where there's no danger of flash floods.",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.5933333333333334
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.2597048282623291,
+        "features": [
+            "singlevar",
+            "sort",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "87",
+        "precision": null,
+        "query": " SELECT DISTINCT ?uri WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Book> ; <http://dbpedia.org/ontology/numberOfPages> ?n } ORDER BY DESC(?n) OFFSET 0 LIMIT 1",
+        "question": "Which book has the most pages?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8733333333333333
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.27484703063964844,
+        "features": [
+            "singlevar",
+            "sort",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "148",
+        "precision": null,
+        "query": " SELECT ?uri WHERE { ?uri <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:States_of_the_United_States> ; <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/AdministrativeRegion> ; <http://dbpedia.org/ontology/areaTotal> ?area } ORDER BY DESC(?area) OFFSET 0 LIMIT 1",
+        "question": "What is the largest state in the United States?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9866666666666667
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.7850980758666992,
+        "features": [
+            "singlevar",
+            "filter",
+            "compound",
+            "comparison"
+        ],
+        "generated_queries": [],
+        "id": "43",
+        "precision": null,
+        "query": " SELECT distinct ?web WHERE { ?sub <http://dbpedia.org/ontology/numberOfEmployees> ?obj . ?sub <http://xmlns.com/foaf/0.1/homepage> ?web FILTER( xsd:integer(?obj) > 500000 ) . }",
+        "question": "Give me the websites of companies with more than 500000 employees.",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.78
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.24714374542236328,
+        "features": [
+            "singlevar",
+            "compound"
+        ],
+        "generated_queries": [],
+        "id": "179",
+        "precision": null,
+        "query": " SELECT ?uri WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Ship> ; <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Christopher_Columbus> ; <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Exploration_ships> }",
+        "question": "What were the names of the three ships by Columbus?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    }
+]

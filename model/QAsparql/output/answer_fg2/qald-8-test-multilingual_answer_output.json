@@ -1,0 +1,914 @@
+[
+    {
+        "answer": "correct",
+        "elaps": 14.944096088409424,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/School>",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Angela_Merkel> <http://dbpedia.org/ontology/almaMater> ?u_0",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/almaMater> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Angela_Merkel> <http://dbpedia.org/ontology/almaMater> ?u_0 .?u_1 <http://dbpedia.org/ontology/almaMater> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/almaMater> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "1",
+        "precision": 0.00029992501874531366,
+        "query": " SELECT ?Almamater WHERE { <http://dbpedia.org/resource/Angela_Merkel> <http://dbpedia.org/ontology/almaMater> ?Almamater }",
+        "question": "What is the alma mater of the chancellor of Germany Angela Merkel?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.2438805103302002,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "2",
+        "precision": null,
+        "query": " SELECT ?area WHERE { <http://dbpedia.org/resource/United_Kingdom> <http://dbpedia.org/ontology/areaTotal> ?area }",
+        "question": "How large is the area of UK?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.7733333333333333
+    },
+    {
+        "answer": "correct",
+        "elaps": 6.398292541503906,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/author> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/The_Interpretation_of_Dreams> <http://dbpedia.org/ontology/author> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/The_Interpretation_of_Dreams> <http://dbpedia.org/ontology/author> ?u_0 .?u_1 <http://dbpedia.org/ontology/author> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_1 <http://dbpedia.org/ontology/author> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "3",
+        "precision": 0.00014998500149985002,
+        "query": " SELECT ?Author WHERE { <http://dbpedia.org/resource/The_Interpretation_of_Dreams> <http://dbpedia.org/ontology/author> ?Author }",
+        "question": "Who is the author of the interpretation of dreams?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.98
+    },
+    {
+        "answer": "correct",
+        "elaps": 251.490647315979,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Adel_Sellimi> <http://dbpedia.org/ontology/birthPlace> ?u_0",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Adele_Astaire> <http://dbpedia.org/ontology/birthPlace> ?u_0",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Adele_Goldstine> <http://dbpedia.org/ontology/birthPlace> ?u_0",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Adele_Astaire> <http://dbpedia.org/ontology/birthName> ?u_0",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Adele_Goldstine> <http://dbpedia.org/ontology/birthName> ?u_0",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Adele_Stolte> <http://dbpedia.org/ontology/birthPlace> ?u_0",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Adele_Farina> <http://dbpedia.org/ontology/birthPlace> ?u_0",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Adel,_Leeds>",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Adel_Ferdosipour> <http://dbpedia.org/ontology/birthName> ?u_0",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Adel_Ferdosipour> <http://dbpedia.org/ontology/birthPlace> ?u_0",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Adele> <http://dbpedia.org/ontology/birthName> ?u_0",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/birthName> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Adel_Ferdosipour> <http://dbpedia.org/ontology/birthPlace> ?u_0 .?u_1 <http://dbpedia.org/ontology/birthPlace> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Adele> <http://dbpedia.org/ontology/birthPlace> ?u_0",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Adel_Sellimi> <http://dbpedia.org/ontology/birthPlace> ?u_0 .?u_1 <http://dbpedia.org/ontology/birthPlace> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Adele_Goldstine> <http://dbpedia.org/ontology/birthName> ?u_0 .?u_1 <http://dbpedia.org/ontology/birthName> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Adele_Astaire> <http://dbpedia.org/ontology/birthName> ?u_0 .?u_1 <http://dbpedia.org/ontology/birthName> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Adele> <http://dbpedia.org/ontology/birthPlace> ?u_0 .?u_1 <http://dbpedia.org/ontology/birthPlace> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Adele> <http://dbpedia.org/ontology/birthName> ?u_0 .?u_1 <http://dbpedia.org/ontology/birthName> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Adele_Farina> <http://dbpedia.org/ontology/birthPlace> ?u_0 .?u_1 <http://dbpedia.org/ontology/birthPlace> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "?u_0 <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Adel,_Leeds> .?u_0 <http://dbpedia.org/ontology/birthPlace> ?u_1",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Adele_Astaire> <http://dbpedia.org/ontology/birthPlace> ?u_0 .?u_1 <http://dbpedia.org/ontology/birthPlace> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Adele_Stolte> <http://dbpedia.org/ontology/birthPlace> ?u_0 .?u_1 <http://dbpedia.org/ontology/birthPlace> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Adel_Ferdosipour> <http://dbpedia.org/ontology/birthName> ?u_0 .?u_1 <http://dbpedia.org/ontology/birthName> ?u_0",
+                "target_var": "?u_1"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Adele_Goldstine> <http://dbpedia.org/ontology/birthPlace> ?u_0 .?u_1 <http://dbpedia.org/ontology/birthPlace> ?u_0",
+                "target_var": "?u_1"
+            }
+        ],
+        "id": "4",
+        "precision": 0.00019948134849391582,
+        "query": " SELECT ?bn WHERE { <http://dbpedia.org/resource/Adele> <http://dbpedia.org/ontology/birthName> ?bn }",
+        "question": "What is the birth name of Adele?",
+        "question_type": [
+            0
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 9.50964903831482,
+        "features": [
+            "sort",
+            "compound",
+            "singlevar"
+        ],
+        "generated_queries": [],
+        "id": "5",
+        "precision": null,
+        "query": " SELECT ?company WHERE { ?company <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Car_manufacturers_of_Germany> ; <http://dbpedia.org/ontology/equity> ?equity ; <http://dbpedia.org/ontology/netIncome> ?netIncome ; <http://dbpedia.org/ontology/production> ?production ; <http://dbpedia.org/ontology/revenue> ?revenue } ORDER BY DESC(?equity)",
+        "question": "What are the top selling luxury vehicle brands in Germany?",
+        "question_type": [
+            0
+        ],
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.96
+    },
+    {
+        "answer": "correct",
+        "elaps": 1.3032565116882324,
+        "features": [
+            "singlevar",
+            "count",
+            "single"
+        ],
+        "generated_queries": [
+            {
+                "correct": true,
+                "query": "<http://dbpedia.org/resource/Bertrand_Russell> <http://dbpedia.org/property/awards> ?u_0",
+                "target_var": "?u_0"
+            }
+        ],
+        "id": "6",
+        "precision": 1.0,
+        "query": " SELECT (COUNT(?Awards) AS ?Counter) WHERE { <http://dbpedia.org/resource/Bertrand_Russell> <http://dbpedia.org/property/awards> ?Awards }",
+        "question": "How many awards has Bertrand Russell?",
+        "question_type": [
+            2
+        ],
+        "recall": 1.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9533333333333334
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.22298049926757812,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "7",
+        "precision": null,
+        "query": " SELECT ?Dan WHERE {  VALUES ?Dan {<http://dbpedia.org/resource/Daniel_Jurafsky> } }",
+        "question": "Who is Dan Jurafsky?",
+        "question_type": 0,
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.98
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.220503568649292,
+        "features": [
+            "compound",
+            "singlevar"
+        ],
+        "generated_queries": [],
+        "id": "8",
+        "precision": null,
+        "query": " SELECT ?Date WHERE { <http://dbpedia.org/resource/2018_FIFA_World_Cup> <http://dbpedia.org/property/date> ?Date } OFFSET 24 LIMIT 1",
+        "question": "When will start the final match of the football world cup 2018?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8266666666666667
+    },
+    {
+        "answer": "-incorrect",
+        "elaps": 7.834427356719971,
+        "features": [
+            "compound",
+            "singlevar"
+        ],
+        "generated_queries": [
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/F._D._Roosevelt_Airport> <http://dbpedia.org/ontology/elevation> ?u_0",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/Flying_D_Ranch_Airport> <http://dbpedia.org/ontology/elevation> ?u_0",
+                "target_var": "?u_0"
+            },
+            {
+                "correct": false,
+                "query": "<http://dbpedia.org/resource/D\u00fcsseldorf_Airport> <http://dbpedia.org/ontology/elevation> ?u_0",
+                "target_var": "?u_0"
+            }
+        ],
+        "id": "10",
+        "precision": 0.0,
+        "query": " SELECT ?ele WHERE { <http://dbpedia.org/resource/D\u00fcsseldorf_Airport> <http://dbpedia.org/ontology/elevation> ?ele } LIMIT 1",
+        "question": "how much is the elevation of D\u00fcsseldorf Airport ?",
+        "question_type": [
+            0
+        ],
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.7466666666666667
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.22320914268493652,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "11",
+        "precision": null,
+        "query": " SELECT ?europop WHERE { <http://dbpedia.org/resource/European_Union> <http://dbpedia.org/ontology/populationTotal> ?europop }",
+        "question": "how much is the total population of  european union?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.5266666666666666
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.21001791954040527,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "12",
+        "precision": null,
+        "query": " SELECT ?ff WHERE { <http://dbpedia.org/resource/French_Fifth_Republic> <http://dbpedia.org/ontology/foundingDate> ?ff }",
+        "question": "when was the founding date of french fifth republic?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.96
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.20839953422546387,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "13",
+        "precision": null,
+        "query": " SELECT ?founder WHERE { <http://dbpedia.org/resource/BlaBlaCar> <http://dbpedia.org/property/founders> ?founder }",
+        "question": "Who are the founders of  BlaBlaCar?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.24181818962097168,
+        "features": [
+            "compound",
+            "singlevar"
+        ],
+        "generated_queries": [],
+        "id": "15",
+        "precision": null,
+        "query": " SELECT ?Ger_lang WHERE { <http://dbpedia.org/resource/German_language> <http://dbpedia.org/property/speakers> ?Ger_lang } OFFSET 1 LIMIT 1",
+        "question": "how many foreigners speak German?",
+        "question_type": 2,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.96
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.214400053024292,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "16",
+        "precision": null,
+        "query": " SELECT ?Goethe WHERE { <http://dbpedia.org/resource/Johann_Wolfgang_von_Goethe> <http://dbpedia.org/ontology/birthPlace> ?Goethe }",
+        "question": "Where is the birthplace of Goethe?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.21049165725708008,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "17",
+        "precision": null,
+        "query": " SELECT ?uri WHERE { <http://dbpedia.org/resource/Carolina_Reaper> <http://dbpedia.org/ontology/origin> ?uri }",
+        "question": "Where is the origin of Carolina reaper?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.21585726737976074,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "18",
+        "precision": null,
+        "query": " SELECT ?Mexico_City WHERE { <http://dbpedia.org/resource/Mexico_City> <http://dbpedia.org/ontology/populationTotal> ?Mexico_City }",
+        "question": "How much is the population of Mexico City ?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.7533333333333333
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.2316429615020752,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "19",
+        "precision": null,
+        "query": " SELECT ?nm WHERE { <http://dbpedia.org/resource/Baghdad> <http://xmlns.com/foaf/0.1/nick> ?nm }",
+        "question": "What is the nick name of Baghdad?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9666666666666667
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.21615242958068848,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "20",
+        "precision": null,
+        "query": " SELECT ?Novelist WHERE { <http://dbpedia.org/resource/A_Song_of_Ice_and_Fire> <http://dbpedia.org/property/author> ?Novelist }",
+        "question": "Who is the novelist of the work a song of ice and fire?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9866666666666667
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.21602725982666016,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "21",
+        "precision": null,
+        "query": " SELECT ?percentage WHERE { <http://dbpedia.org/resource/Brazil> <http://dbpedia.org/ontology/percentageOfAreaWater> ?percentage }",
+        "question": "What is the percentage of area water in Brazil?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.96
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.20991253852844238,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "22",
+        "precision": null,
+        "query": " SELECT ?pIraq WHERE { <http://dbpedia.org/resource/Iraq> <http://dbpedia.org/ontology/populationTotal> ?pIraq }",
+        "question": "How much is the population of Iraq?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.7466666666666667
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.21172070503234863,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "24",
+        "precision": null,
+        "query": " SELECT ?pop WHERE { <http://dbpedia.org/resource/Cairo> <http://dbpedia.org/ontology/populationTotal> ?pop }",
+        "question": "What is the population of Cairo?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 1.0
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.22609519958496094,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "25",
+        "precision": null,
+        "query": " SELECT ?rank WHERE { <http://dbpedia.org/resource/Germany> <http://dbpedia.org/property/populationDensityRank> ?rank }",
+        "question": "How much is the population density rank of Germany?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.7466666666666667
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.21461939811706543,
+        "features": [
+            "compound",
+            "singlevar"
+        ],
+        "generated_queries": [],
+        "id": "26",
+        "precision": null,
+        "query": " SELECT ?rdf_owl WHERE { <http://dbpedia.org/resource/Web_Ontology_Language> <http://dbpedia.org/ontology/abstract> ?rdf_owl } LIMIT 1",
+        "question": "What is the relation between Resource Description Framework and Web Ontology Language?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.98
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.22127628326416016,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "27",
+        "precision": null,
+        "query": " SELECT ?tarea WHERE { <http://dbpedia.org/resource/North_Rhine-Westphalia> <http://dbpedia.org/ontology/areaTotal> ?tarea }",
+        "question": "How large is the total area of North Rhine-Westphalia?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.5266666666666666
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.21785330772399902,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "28",
+        "precision": null,
+        "query": " SELECT ?title WHERE { <http://dbpedia.org/resource/The_Interpretation_of_Dreams> <http://xmlns.com/foaf/0.1/name> ?title }",
+        "question": "What is the original title of the interpretation of dreams?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9866666666666667
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.26563239097595215,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "30",
+        "precision": null,
+        "query": " SELECT ?writers WHERE { <http://dbpedia.org/resource/The_Wall> <http://dbpedia.org/property/writer> ?writers }",
+        "question": "Who are the writers of the Wall album of Pink Floyd?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.98
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 0.8437161445617676,
+        "features": [
+            "compound",
+            "singlevar"
+        ],
+        "generated_queries": [],
+        "id": "31",
+        "precision": null,
+        "query": " SELECT ?x WHERE { <http://dbpedia.org/resource/William_Shakespeare> <http://dbpedia.org/ontology/deathDate> ?x } LIMIT 1",
+        "question": "When was the death  of  Shakespeare?",
+        "question_type": [
+            0
+        ],
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9666666666666667
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.24908685684204102,
+        "features": [
+            "compound",
+            "singlevar"
+        ],
+        "generated_queries": [],
+        "id": "32",
+        "precision": null,
+        "query": " SELECT ?border WHERE { <http://dbpedia.org/resource/Geography_of_Iran> <http://dbpedia.org/property/borders> ?border } LIMIT 8",
+        "question": "With how many countries Iran has borders?",
+        "question_type": 2,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9466666666666667
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.21906042098999023,
+        "features": [
+            "sort",
+            "compound",
+            "singlevar"
+        ],
+        "generated_queries": [],
+        "id": "34",
+        "precision": null,
+        "query": " SELECT ?city WHERE { ?m <http://www.w3.org/2004/02/skos/core#broader> <http://dbpedia.org/resource/Category:Cities_in_Germany> . ?city <http://purl.org/dc/terms/subject> ?m ; <http://dbpedia.org/ontology/areaTotal> ?area } ORDER BY ?area LIMIT 1",
+        "question": "What is the smallest city by area in Germany?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9466666666666667
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.22458791732788086,
+        "features": [
+            "compound",
+            "singlevar"
+        ],
+        "generated_queries": [],
+        "id": "35",
+        "precision": null,
+        "query": " SELECT ?company WHERE { ?company <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Companies_based_in_North_Rhine-Westphalia> ; <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Brewery> }",
+        "question": "Which beer brewing comapnies are located in North-Rhine Westphalia?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9333333333333333
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.19872760772705078,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "36",
+        "precision": null,
+        "query": " SELECT ?lcity WHERE { <http://dbpedia.org/resource/United_States> <http://dbpedia.org/ontology/largestCity> ?lcity }",
+        "question": "What is the largest city in america?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9066666666666666
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.21311640739440918,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "37",
+        "precision": null,
+        "query": " SELECT ?leader WHERE { <http://dbpedia.org/resource/Federal_Ministry_of_Finance_(Germany)> <http://dbpedia.org/ontology/leader> ?leader }",
+        "question": "Who is the current federal minister of finance in Germany?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.94
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.20908021926879883,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "38",
+        "precision": null,
+        "query": " SELECT ?m  WHERE { <http://dbpedia.org/resource/Bavarian_Alps> dbp:highest ?m} ",
+        "question": "What is the highest mountain in the Bavarian Alps?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8466666666666667
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.2194364070892334,
+        "features": [
+            "compound",
+            "singlevar"
+        ],
+        "generated_queries": [],
+        "id": "40",
+        "precision": null,
+        "query": " SELECT ?name WHERE { <http://dbpedia.org/resource/8th_President_of_the_United_States> <http://dbpedia.org/ontology/wikiPageRedirects> ?link . ?link <http://dbpedia.org/property/name> ?name }",
+        "question": "Who is 8th president of US?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9933333333333333
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.20905375480651855,
+        "features": [
+            "compound",
+            "singlevar"
+        ],
+        "generated_queries": [],
+        "id": "41",
+        "precision": null,
+        "query": " SELECT ?point WHERE { <http://dbpedia.org/resource/Extreme_points_of_Earth> <http://purl.org/dc/terms/subject> ?x . ?point <http://purl.org/dc/terms/subject> ?x ; <http://www.w3.org/2000/01/rdf-schema#comment> ?comment FILTER ( lang(?comment) = \"en\" ) } OFFSET 13 LIMIT 1",
+        "question": "Where is the most deep point in the ocean?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.7733333333333333
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.3024790287017822,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "42",
+        "precision": null,
+        "query": " SELECT ?s WHERE { <http://dbpedia.org/resource/Pennsylvania_State_University> <http://dbpedia.org/ontology/state> ?s }",
+        "question": "In which state Penn State University is located?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9333333333333333
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.2086505889892578,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "43",
+        "precision": null,
+        "query": " SELECT ?species WHERE { <http://dbpedia.org/resource/Elephant> <http://dbpedia.org/property/species> ?species }",
+        "question": "Which species does an elephant belong?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.8333333333333334
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.21903681755065918,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "44",
+        "precision": null,
+        "query": " SELECT ?owner WHERE { ?owner <http://dbpedia.org/ontology/owner> <http://dbpedia.org/resource/Donald_Trump> }",
+        "question": "What is Donald Trump's main business?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9866666666666667
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.21617722511291504,
+        "features": [
+            "sort",
+            "compound",
+            "singlevar"
+        ],
+        "generated_queries": [],
+        "id": "45",
+        "precision": null,
+        "query": " SELECT ?book ?date WHERE { ?book <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/Dan_Brown> . ?book <http://dbpedia.org/property/releaseDate|<http://dbpedia.org/ontology/publicationDate> ?date } ORDER BY DESC(?date)",
+        "question": "What is the last work of Dan Brown?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9533333333333334
+    },
+    {
+        "answer": "-without_path",
+        "elaps": 1.6002671718597412,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "46",
+        "precision": null,
+        "query": " SELECT ?books WHERE { ?books <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/John_Green_(author)> }",
+        "question": "What other books have been written by the author of The Fault in Our Stars?",
+        "question_type": [
+            0
+        ],
+        "recall": 0.0,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9666666666666667
+    },
+    {
+        "answer": "-Not_Applicable",
+        "elaps": 0.2286510467529297,
+        "features": [
+            "singlevar",
+            "single"
+        ],
+        "generated_queries": [],
+        "id": "47",
+        "precision": null,
+        "query": " SELECT ?date WHERE { <http://dbpedia.org/resource/Friends> <http://dbpedia.org/ontology/completionDate> ?date }",
+        "question": "When was the last episode of the TV series Friends aired?",
+        "question_type": 0,
+        "recall": null,
+        "timeout_waittime": 0,
+        "type_confidence": 0.9733333333333334
+    }
+]
