@@ -8,7 +8,7 @@
 
 <!-- <!-- *Paper*: []() -->
 #### Citation 
-
+```
 @Article{Tran-KBQA,
   Title                    = {A comparative study of question answering over knowledge bases},
   Author                   = {Khiem Vinh Tran, Hao Phu Phan, Khang Nguyen Duc Quach, Ngan Luu-Thuy Nguyen, Jun Jo, Thanh Tam Nguyen},
@@ -16,7 +16,7 @@
   Year={2022},
   Publisher={"Springer International Publishing"},
 }
-
+```
 # Framework
 
 ## Dataset format
