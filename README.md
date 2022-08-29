@@ -12,9 +12,9 @@
 @Article{Tran2021KBQA,
   Title= {A comparative study of question answering over knowledge bases},
   Author= {Khiem Vinh Tran, Hao Phu Phan, Khang Nguyen Duc Quach, Ngan Luu-Thuy Nguyen, Jun Jo, Thanh Tam Nguyen},
-  booktitle={"Advanced Data Mining and Applications"},
+  booktitle={Advanced Data Mining and Applications},
   Year={2022},
-  Publisher={"Springer International Publishing"},
+  Publisher={Springer International Publishing},
 }
 ```
 # Framework
