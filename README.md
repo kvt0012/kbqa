@@ -6,18 +6,17 @@
 
 - In this work, we are also releasing a dataset for COVID-19. The dataset is provided in folder [COVID_data](https://github.com/tamlhp/kbqa/tree/main/data/COVID) in this repository. More details about dataset are provided below.
 
-<!-- *Paper*: []()
+<!-- <!-- *Paper*: []() -->
 #### Citation 
-```
-@Article{Tran,
+
+@Article{Tran-KBQA,
   Title                    = {A comparative study of question answering over knowledge bases},
-  Author                   = {},
-  Journal                  = {},
-  Year                     = {},
-  volume                   = {},
-  number                    = {}
+  Author                   = {Khiem Vinh Tran, Hao Phu Phan, Khang Nguyen Duc Quach, Ngan Luu-Thuy Nguyen, Jun Jo, Thanh Tam Nguyen},
+  booktitle={"Advanced Data Mining and Applications"},
+  Year={2022},
+  Publisher={"Springer International Publishing"},
 }
-``` -->
+
 # Framework
 
 ## Dataset format
