@@ -1,5 +1,6 @@
 # A comparative study of question answering over knowledge bases
 
+[![arXiv](https://img.shields.io/badge/arXiv-2211.08170-b31b1b.svg)](https://arxiv.org/abs/2211.08170)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 	![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 - This repository is a implementation of the framework for a comparative study of question answering over knowledge bases.
