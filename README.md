@@ -8,6 +8,9 @@
 - In this work, we are also releasing a dataset for COVID-19. The dataset is provided in folder [COVID_data](https://github.com/tamlhp/kbqa/tree/main/data/COVID) in this repository. More details about dataset are provided below.
 
 <!-- <!-- *Paper*: []() -->
+
+Please read and cite our paper: [![arXiv](https://img.shields.io/badge/arXiv-2211.08170-b31b1b.svg)](https://arxiv.org/abs/2211.08170)
+
 #### Citation 
 ```
 @Article{Tran2021KBQA,
