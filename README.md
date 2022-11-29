@@ -9,16 +9,17 @@
 
 <!-- <!-- *Paper*: []() -->
 
-Please read and cite our paper: [![arXiv](https://img.shields.io/badge/arXiv-2211.08170-b31b1b.svg)](https://arxiv.org/abs/2211.08170)
+Please read and cite our paper: https://link.springer.com/chapter/10.1007/978-3-031-22064-7_20
 
 #### Citation 
 ```
-@Article{Tran2021KBQA,
-  Title= {A comparative study of question answering over knowledge bases},
-  Author= {Khiem Vinh Tran, Hao Phu Phan, Khang Nguyen Duc Quach, Ngan Luu-Thuy Nguyen, Jun Jo, Thanh Tam Nguyen},
-  booktitle={Advanced Data Mining and Applications},
-  Year={2022},
-  Publisher={Springer International Publishing},
+@inproceedings{tran2022comparative,
+  title={A Comparative Study of Question Answering over Knowledge Bases},
+  author={Tran, Khiem Vinh and Phan, Hao Phu and Quach, Khang Nguyen Duc and Nguyen, Ngan Luu-Thuy and Jo, Jun and Nguyen, Thanh Tam},
+  booktitle={International Conference on Advanced Data Mining and Applications},
+  pages={259--274},
+  year={2022},
+  organization={Springer}
 }
 ```
 # Framework
